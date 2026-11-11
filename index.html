@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Rule Guard — Standalone Prop Firm Rules Explorer for funded traders. All data embedded directly.">
-  <title>Rule Guard — Prop Firm Rules Explorer</title>
+  <meta name="description" content="Prop Rules by Princee.fx — Explore all Forex & Futures prop firm plans, rules, drawdown types, and account sizes.">
+  <title>Prop Rules by Princee.fx</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23D0343C'/%3E%3Cpath d='M16 4L6 9v8c0 7 4.5 13.5 10 15 5.5-1.5 10-8 10-15V9L16 4z' fill='%23FFF8EE'/%3E%3Cpath d='M12 15l3 3 5-5' stroke='%239E1F27' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,9 +395,111 @@ footer {
 
 /* Not-found inline link */
 .nf-link { color: var(--red); text-decoration: underline; }
+
+
+/* ===== TOP SOCIAL PROMO BANNER ===== */
+.top-banner {
+  background: linear-gradient(135deg, #2B1B17 0%, #180D0B 100%);
+  color: #FFF8EE;
+  padding: 10px 20px;
+  font-size: 0.85rem;
+  border-bottom: 1px solid rgba(229,211,186,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  z-index: 105;
+  position: relative;
+}
+.banner-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.banner-text span.heart {
+  color: #E03A43;
+}
+.banner-socials {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.social-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #FFF8EE;
+  text-decoration: none;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.18);
+  transition: all 0.2s ease;
+}
+.social-pill:hover {
+  transform: translateY(-2px);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
+.social-pill svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}
+.social-pill.insta:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border-color: transparent;
+}
+.social-pill.yt:hover {
+  background: #FF0000;
+  border-color: transparent;
+}
+.social-pill.tg:hover {
+  background: #24A1DE;
+  border-color: transparent;
+}
+.social-pill.superprofile {
+  background: linear-gradient(135deg, var(--red) 0%, var(--red-dark) 100%);
+  border-color: rgba(255,255,255,0.25);
+  box-shadow: 0 2px 8px var(--red-shadow);
+}
+.social-pill.superprofile:hover {
+  box-shadow: 0 4px 14px var(--red-shadow);
+}
   </style>
 </head>
 <body>
+
+  <!-- Top Social Banner by Princee.fx -->
+  <div class="top-banner" role="banner" aria-label="Creator Links">
+    <div class="banner-text">
+      <span>Loved this site? Just follow me on Insta, YouTube and Telegram</span>
+      <span class="heart">❤️</span>
+    </div>
+    <div class="banner-socials">
+      <a href="https://instagram.com/princee.fx" target="_blank" rel="noopener noreferrer" class="social-pill insta" title="Follow on Instagram @princee.fx">
+        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        <span>Instagram</span>
+      </a>
+      <a href="https://youtube.com/@Princee.fx" target="_blank" rel="noopener noreferrer" class="social-pill yt" title="Subscribe on YouTube @Princee.fx">
+        <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        <span>YouTube</span>
+      </a>
+      <a href="https://t.me/princeefxx" target="_blank" rel="noopener noreferrer" class="social-pill tg" title="Join Telegram Channel">
+        <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18.718-1.077 4.962-1.536 7.218-.194.953-.551 1.272-.897 1.303-.75.068-1.32-.497-2.046-.973-.114-.075-1.782-1.127-1.92-1.222-.387-.266-.201-.412.042-.656.064-.064 1.171-1.109 2.155-2.047 1.838-1.751 2.684-2.585 2.709-2.646.035-.084.015-.157-.049-.199-.074-.048-.184-.032-.265-.013-.115.027-1.939 1.233-5.474 3.619-.518.356-.988.531-1.408.522-.464-.01-1.356-.263-2.019-.48-.813-.266-1.458-.407-1.402-.859.029-.235.353-.476.972-.724 3.808-1.659 6.349-2.753 7.623-3.284 3.633-1.517 4.388-1.781 4.88-1.79.108-.002.35.025.507.153.132.107.169.252.186.353.018.106.04.354.022.545z"/></svg>
+        <span>Telegram</span>
+      </a>
+      <a href="https://superprofile.bio/princeefx" target="_blank" rel="noopener noreferrer" class="social-pill superprofile" title="Visit SuperProfile">
+        <span>⭐ superprofile.bio/princeefx ↗</span>
+      </a>
+    </div>
+  </div>
 
   <!-- Loading State -->
   <div id="loading" role="status" aria-live="polite">
@@ -409,7 +511,7 @@ footer {
   <div id="app" class="hidden">
     <!-- Header -->
     <header>
-      <a href="#" class="logo" aria-label="Rule Guard Home" onclick="location.reload(); return false;">
+      <a href="#" class="logo" aria-label="Prop Rules by Princee.fx" onclick="location.reload(); return false;">
         <div class="logo-tile" aria-hidden="true">
           <div class="logo-tile-shadow"></div>
           <div class="logo-tile-face">
@@ -420,8 +522,8 @@ footer {
           </div>
         </div>
         <div class="logo-text">
-          <strong>Rule<span>Guard</span></strong>
-          <small>Prop Firm Rules Explorer</small>
+          <strong>Prop Rules <span style="font-weight: 500; font-size: 0.85em; opacity: 0.85;">by</span> <span>Princee.fx</span></strong>
+          <small>Prop Firm Plans & Rules Explorer</small>
         </div>
       </a>
 
@@ -445,7 +547,7 @@ footer {
           <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
           </svg>
-          <input type="search" id="firm-search" placeholder="Search prop firms (e.g. FTMO, Topstep, Apex, FundedNext)…" aria-label="Search prop firms">
+          <input type="search" id="firm-search" placeholder="Search prop firms (e.g. FTMO, Topstep, Apex, FundedNext, Tradeify)…" aria-label="Search prop firms">
         </div>
 
         <div id="firm-grid" class="firm-grid" role="group" aria-label="Prop Firm List"></div>
@@ -509,10 +611,22 @@ footer {
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- Footer with Princee.fx socials -->
     <footer>
+      <p style="font-size: 0.95rem; margin-bottom: 8px;">
+        <strong>Prop Rules</strong> by <a href="https://superprofile.bio/princeefx" target="_blank" rel="noopener noreferrer" style="color: var(--red); font-weight: 700; text-decoration: none;">Princee.fx</a>
+      </p>
+      <div style="display: flex; justify-content: center; gap: 14px; margin-bottom: 12px; flex-wrap: wrap;">
+        <a href="https://instagram.com/princee.fx" target="_blank" rel="noopener noreferrer" style="color: var(--muted); font-weight: 600;">Instagram (@princee.fx)</a>
+        <span>·</span>
+        <a href="https://youtube.com/@Princee.fx" target="_blank" rel="noopener noreferrer" style="color: var(--muted); font-weight: 600;">YouTube (@Princee.fx)</a>
+        <span>·</span>
+        <a href="https://t.me/princeefxx" target="_blank" rel="noopener noreferrer" style="color: var(--muted); font-weight: 600;">Telegram</a>
+        <span>·</span>
+        <a href="https://superprofile.bio/princeefx" target="_blank" rel="noopener noreferrer" style="color: var(--red); font-weight: 600;">SuperProfile ↗</a>
+      </div>
       <p>
-        <strong>RuleGuard</strong> is an independent research database for prop traders. Prop firm rules and pricing change frequently.<br>
+        Independent research database for prop traders. Prop firm rules and pricing change frequently.<br>
         <strong>Always verify terms directly on the firm's official website before purchasing any challenge.</strong>
       </p>
       <p style="margin-top: 6px; opacity: 0.8;">Not affiliated with, sponsored by, or endorsed by any proprietary trading firm.</p>
@@ -10913,6 +11027,312 @@ footer {
           "source_url": "https://apextraderfunding.com/faq/",
           "verification_date": "2026-11-11"
         }
+      },
+      "Evaluation - Tradovate Evaluation ($25,000)": {
+        "account_size": 25000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 1500,
+            "trailing_drawdown_amount": 1500,
+            "drawdown_type": "Trailing Intraday (Peak Equity)",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 1,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "4 contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 1500,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 100,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Twice monthly (1st-5th & 15th-20th)",
+            "first_payout_waiting_time": "10 active trading days",
+            "min_winning_days_for_payout": 10,
+            "payout_cap_per_withdrawal": 2000
+          }
+        },
+        "rules": {
+          "fee_regular": 147,
+          "fee_discounted": 29.4,
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$149 one-time or $85/month on funded PA",
+          "platforms": "Tradovate, TradingView, NinjaTrader",
+          "contract_limits": "4 contracts",
+          "trailing_threshold": "$1,500 Trailing Threshold",
+          "trailing_stop_lock": "Locks at Starting Balance + $100",
+          "scaling_by_contracts": "Contract scaling permitted up to max limit; full contracts available from start",
+          "eod_flat_requirement": "Yes, flat daily by 4:59 PM EST (market close)",
+          "trading_hours": "CME Market Hours: 6:00 PM EST to 4:59 PM EST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX equity and commodity futures",
+          "consistency_rule": "30% rule on PA payouts (no single day can exceed 30% of total profit)",
+          "news_trading_rule": "Allowed during all phases",
+          "weekend_holding_rule": "Prohibited (all positions flat by 4:59 PM EST Friday)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed (trade copier allowed up to 20 accounts)",
+          "inactivity_days": 30,
+          "scaling_plan_details": "Can trade up to 20 simultaneous funded accounts",
+          "prohibited_strategies": "Macro news scalping with extreme slippage abuse, exploiting demo feed glitches",
+          "source_url": "https://apextraderfunding.com/faq/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - Tradovate Evaluation ($50,000)": {
+        "account_size": 50000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 3000,
+            "trailing_drawdown_amount": 2500,
+            "drawdown_type": "Trailing Intraday (Peak Equity)",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 1,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "10 contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 2500,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 100,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Twice monthly (1st-5th & 15th-20th)",
+            "first_payout_waiting_time": "10 active trading days",
+            "min_winning_days_for_payout": 10,
+            "payout_cap_per_withdrawal": 2000
+          }
+        },
+        "rules": {
+          "fee_regular": 167,
+          "fee_discounted": 29.4,
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$149 one-time or $85/month on funded PA",
+          "platforms": "Tradovate, TradingView, NinjaTrader",
+          "contract_limits": "10 contracts",
+          "trailing_threshold": "$1,500 Trailing Threshold",
+          "trailing_stop_lock": "Locks at Starting Balance + $100",
+          "scaling_by_contracts": "Contract scaling permitted up to max limit; full contracts available from start",
+          "eod_flat_requirement": "Yes, flat daily by 4:59 PM EST (market close)",
+          "trading_hours": "CME Market Hours: 6:00 PM EST to 4:59 PM EST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX equity and commodity futures",
+          "consistency_rule": "30% rule on PA payouts (no single day can exceed 30% of total profit)",
+          "news_trading_rule": "Allowed during all phases",
+          "weekend_holding_rule": "Prohibited (all positions flat by 4:59 PM EST Friday)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed (trade copier allowed up to 20 accounts)",
+          "inactivity_days": 30,
+          "scaling_plan_details": "Can trade up to 20 simultaneous funded accounts",
+          "prohibited_strategies": "Macro news scalping with extreme slippage abuse, exploiting demo feed glitches",
+          "source_url": "https://apextraderfunding.com/faq/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - Tradovate Evaluation ($100,000)": {
+        "account_size": 100000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 6000,
+            "trailing_drawdown_amount": 3000,
+            "drawdown_type": "Trailing Intraday (Peak Equity)",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 1,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "14 contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 3000,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 100,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Twice monthly (1st-5th & 15th-20th)",
+            "first_payout_waiting_time": "10 active trading days",
+            "min_winning_days_for_payout": 10,
+            "payout_cap_per_withdrawal": 2000
+          }
+        },
+        "rules": {
+          "fee_regular": 207,
+          "fee_discounted": 29.4,
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$149 one-time or $85/month on funded PA",
+          "platforms": "Tradovate, TradingView, NinjaTrader",
+          "contract_limits": "14 contracts",
+          "trailing_threshold": "$1,500 Trailing Threshold",
+          "trailing_stop_lock": "Locks at Starting Balance + $100",
+          "scaling_by_contracts": "Contract scaling permitted up to max limit; full contracts available from start",
+          "eod_flat_requirement": "Yes, flat daily by 4:59 PM EST (market close)",
+          "trading_hours": "CME Market Hours: 6:00 PM EST to 4:59 PM EST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX equity and commodity futures",
+          "consistency_rule": "30% rule on PA payouts (no single day can exceed 30% of total profit)",
+          "news_trading_rule": "Allowed during all phases",
+          "weekend_holding_rule": "Prohibited (all positions flat by 4:59 PM EST Friday)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed (trade copier allowed up to 20 accounts)",
+          "inactivity_days": 30,
+          "scaling_plan_details": "Can trade up to 20 simultaneous funded accounts",
+          "prohibited_strategies": "Macro news scalping with extreme slippage abuse, exploiting demo feed glitches",
+          "source_url": "https://apextraderfunding.com/faq/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - Tradovate Evaluation ($150,000)": {
+        "account_size": 150000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 9000,
+            "trailing_drawdown_amount": 5000,
+            "drawdown_type": "Trailing Intraday (Peak Equity)",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 1,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "17 contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 5000,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 100,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Twice monthly (1st-5th & 15th-20th)",
+            "first_payout_waiting_time": "10 active trading days",
+            "min_winning_days_for_payout": 10,
+            "payout_cap_per_withdrawal": 2000
+          }
+        },
+        "rules": {
+          "fee_regular": 297,
+          "fee_discounted": 29.4,
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$149 one-time or $85/month on funded PA",
+          "platforms": "Tradovate, TradingView, NinjaTrader",
+          "contract_limits": "17 contracts",
+          "trailing_threshold": "$1,500 Trailing Threshold",
+          "trailing_stop_lock": "Locks at Starting Balance + $100",
+          "scaling_by_contracts": "Contract scaling permitted up to max limit; full contracts available from start",
+          "eod_flat_requirement": "Yes, flat daily by 4:59 PM EST (market close)",
+          "trading_hours": "CME Market Hours: 6:00 PM EST to 4:59 PM EST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX equity and commodity futures",
+          "consistency_rule": "30% rule on PA payouts (no single day can exceed 30% of total profit)",
+          "news_trading_rule": "Allowed during all phases",
+          "weekend_holding_rule": "Prohibited (all positions flat by 4:59 PM EST Friday)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed (trade copier allowed up to 20 accounts)",
+          "inactivity_days": 30,
+          "scaling_plan_details": "Can trade up to 20 simultaneous funded accounts",
+          "prohibited_strategies": "Macro news scalping with extreme slippage abuse, exploiting demo feed glitches",
+          "source_url": "https://apextraderfunding.com/faq/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - Tradovate Evaluation ($250,000)": {
+        "account_size": 250000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 15000,
+            "trailing_drawdown_amount": 6500,
+            "drawdown_type": "Trailing Intraday (Peak Equity)",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 1,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "27 contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 6500,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 100,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Twice monthly (1st-5th & 15th-20th)",
+            "first_payout_waiting_time": "10 active trading days",
+            "min_winning_days_for_payout": 10,
+            "payout_cap_per_withdrawal": 2000
+          }
+        },
+        "rules": {
+          "fee_regular": 517,
+          "fee_discounted": 29.4,
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$149 one-time or $85/month on funded PA",
+          "platforms": "Tradovate, TradingView, NinjaTrader",
+          "contract_limits": "27 contracts",
+          "trailing_threshold": "$1,500 Trailing Threshold",
+          "trailing_stop_lock": "Locks at Starting Balance + $100",
+          "scaling_by_contracts": "Contract scaling permitted up to max limit; full contracts available from start",
+          "eod_flat_requirement": "Yes, flat daily by 4:59 PM EST (market close)",
+          "trading_hours": "CME Market Hours: 6:00 PM EST to 4:59 PM EST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX equity and commodity futures",
+          "consistency_rule": "30% rule on PA payouts (no single day can exceed 30% of total profit)",
+          "news_trading_rule": "Allowed during all phases",
+          "weekend_holding_rule": "Prohibited (all positions flat by 4:59 PM EST Friday)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed (trade copier allowed up to 20 accounts)",
+          "inactivity_days": 30,
+          "scaling_plan_details": "Can trade up to 20 simultaneous funded accounts",
+          "prohibited_strategies": "Macro news scalping with extreme slippage abuse, exploiting demo feed glitches",
+          "source_url": "https://apextraderfunding.com/faq/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - Tradovate Evaluation ($300,000)": {
+        "account_size": 300000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 20000,
+            "trailing_drawdown_amount": 7500,
+            "drawdown_type": "Trailing Intraday (Peak Equity)",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 1,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "35 contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 7500,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 100,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Twice monthly (1st-5th & 15th-20th)",
+            "first_payout_waiting_time": "10 active trading days",
+            "min_winning_days_for_payout": 10,
+            "payout_cap_per_withdrawal": 2000
+          }
+        },
+        "rules": {
+          "fee_regular": 657,
+          "fee_discounted": 29.4,
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$149 one-time or $85/month on funded PA",
+          "platforms": "Tradovate, TradingView, NinjaTrader",
+          "contract_limits": "35 contracts",
+          "trailing_threshold": "$1,500 Trailing Threshold",
+          "trailing_stop_lock": "Locks at Starting Balance + $100",
+          "scaling_by_contracts": "Contract scaling permitted up to max limit; full contracts available from start",
+          "eod_flat_requirement": "Yes, flat daily by 4:59 PM EST (market close)",
+          "trading_hours": "CME Market Hours: 6:00 PM EST to 4:59 PM EST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX equity and commodity futures",
+          "consistency_rule": "30% rule on PA payouts (no single day can exceed 30% of total profit)",
+          "news_trading_rule": "Allowed during all phases",
+          "weekend_holding_rule": "Prohibited (all positions flat by 4:59 PM EST Friday)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed (trade copier allowed up to 20 accounts)",
+          "inactivity_days": 30,
+          "scaling_plan_details": "Can trade up to 20 simultaneous funded accounts",
+          "prohibited_strategies": "Macro news scalping with extreme slippage abuse, exploiting demo feed glitches",
+          "source_url": "https://apextraderfunding.com/faq/",
+          "verification_date": "2026-11-11"
+        }
       }
     },
     "Topstep": {
@@ -10923,32 +11343,83 @@ footer {
           "evaluation": {
             "profit_target_amount": 3000,
             "trailing_drawdown_amount": 2000,
-            "drawdown_type": "End-of-Day (EOD) Trailing",
-            "daily_loss_limit_amount": 1000,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
             "min_trading_days": 2,
-            "max_time_limit": "Unlimited (monthly recurring subscription)",
-            "contract_limits": "5 minis / 50 micros"
+            "max_time_limit": "Unlimited",
+            "contract_limits": "5 contracts"
           },
           "funded": {
             "profit_target_amount": 0,
             "trailing_drawdown_amount": 2000,
-            "drawdown_type": "End-of-Day (EOD) Trailing",
-            "daily_loss_limit_amount": 1000,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
             "profit_split_starting_pct": 100,
             "profit_split_max_pct": 90,
-            "payout_frequency": "On-demand during market hours once eligibility is met",
-            "first_payout_waiting_time": "After 5 winning days (+$200/day)",
-            "min_winning_days_for_payout": "5 winning days of at least +$200 profit",
-            "payout_cap_per_withdrawal": "50% of account balance (capped at $2,000 per payout for first 3 payouts)"
+            "payout_frequency": "Daily on request (up to 50% of balance per payout)",
+            "first_payout_waiting_time": "5 winning days of $200+",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 5000
           }
         },
         "rules": {
-          "fee_regular": 165,
+          "fee_regular": 49,
           "fee_discounted": 49,
           "fee_refundable": "No (Subscription-based)",
           "activation_fee": "$149 one-time activation fee for Express Funded Account (XFA)",
           "platforms": "TopstepX, NinjaTrader, Tradovate, TradingView, Quantower",
-          "contract_limits": "5 minis / 50 micros",
+          "contract_limits": "5 contracts",
+          "trailing_threshold": "$2,000 Maximum Loss Limit (EOD Trailing)",
+          "trailing_stop_lock": "Locks at starting balance permanently once reached",
+          "scaling_by_contracts": "Contract scaling plan applies in Express Funded Account based on account balance tiers",
+          "eod_flat_requirement": "Yes, all trades closed by 4:10 PM EST / 3:10 PM CST",
+          "trading_hours": "CME Market Hours: 6:00 PM EST to 4:10 PM EST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX futures",
+          "consistency_rule": "50% rule during Combine (no single day can equal 50%+ of total profit target)",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Prohibited (must close all trades before Friday market close)",
+          "ea_bots_rule": "Allowed (algorithmic trading supported on NinjaTrader/Tradovate)",
+          "copy_trading_rule": "Allowed between own accounts on supported platforms",
+          "inactivity_days": 30,
+          "scaling_plan_details": "Scale contracts in XFA; transition to Live Funded Account with full institutional backing",
+          "prohibited_strategies": "Exploiting simulator fills, tick scalping arbitrage",
+          "source_url": "https://topstep.com/trading-combine/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - Micro Combine ($50,000)": {
+        "account_size": 50000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 2400,
+            "trailing_drawdown_amount": 2000,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 2,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "50 Micro Contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 2000,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 100,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Daily on request",
+            "first_payout_waiting_time": "5 winning days",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 3000
+          }
+        },
+        "rules": {
+          "fee_regular": 37,
+          "fee_discounted": 49,
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$149 one-time activation fee for Express Funded Account (XFA)",
+          "platforms": "TopstepX, NinjaTrader, Tradovate, TradingView, Quantower",
+          "contract_limits": "Micros only (up to 50 micros)",
           "trailing_threshold": "$2,000 Maximum Loss Limit (EOD Trailing)",
           "trailing_stop_lock": "Locks at starting balance permanently once reached",
           "scaling_by_contracts": "Contract scaling plan applies in Express Funded Account based on account balance tiers",
@@ -10974,33 +11445,84 @@ footer {
           "evaluation": {
             "profit_target_amount": 6000,
             "trailing_drawdown_amount": 3000,
-            "drawdown_type": "End-of-Day (EOD) Trailing",
-            "daily_loss_limit_amount": 2000,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
             "min_trading_days": 2,
-            "max_time_limit": "Unlimited (monthly recurring subscription)",
-            "contract_limits": "10 minis / 100 micros"
+            "max_time_limit": "Unlimited",
+            "contract_limits": "10 contracts"
           },
           "funded": {
             "profit_target_amount": 0,
             "trailing_drawdown_amount": 3000,
-            "drawdown_type": "End-of-Day (EOD) Trailing",
-            "daily_loss_limit_amount": 2000,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
             "profit_split_starting_pct": 100,
             "profit_split_max_pct": 90,
-            "payout_frequency": "On-demand during market hours once eligibility is met",
-            "first_payout_waiting_time": "After 5 winning days (+$200/day)",
-            "min_winning_days_for_payout": "5 winning days of at least +$200 profit",
-            "payout_cap_per_withdrawal": "50% of account balance (capped at $2,000 per payout for first 3 payouts)"
+            "payout_frequency": "Daily on request (up to 50% of balance per payout)",
+            "first_payout_waiting_time": "5 winning days of $200+",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 5000
           }
         },
         "rules": {
-          "fee_regular": 325,
-          "fee_discounted": 99,
+          "fee_regular": 99,
+          "fee_discounted": 49,
           "fee_refundable": "No (Subscription-based)",
           "activation_fee": "$149 one-time activation fee for Express Funded Account (XFA)",
           "platforms": "TopstepX, NinjaTrader, Tradovate, TradingView, Quantower",
-          "contract_limits": "10 minis / 100 micros",
-          "trailing_threshold": "$3,000 Maximum Loss Limit (EOD Trailing)",
+          "contract_limits": "10 contracts",
+          "trailing_threshold": "$2,000 Maximum Loss Limit (EOD Trailing)",
+          "trailing_stop_lock": "Locks at starting balance permanently once reached",
+          "scaling_by_contracts": "Contract scaling plan applies in Express Funded Account based on account balance tiers",
+          "eod_flat_requirement": "Yes, all trades closed by 4:10 PM EST / 3:10 PM CST",
+          "trading_hours": "CME Market Hours: 6:00 PM EST to 4:10 PM EST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX futures",
+          "consistency_rule": "50% rule during Combine (no single day can equal 50%+ of total profit target)",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Prohibited (must close all trades before Friday market close)",
+          "ea_bots_rule": "Allowed (algorithmic trading supported on NinjaTrader/Tradovate)",
+          "copy_trading_rule": "Allowed between own accounts on supported platforms",
+          "inactivity_days": 30,
+          "scaling_plan_details": "Scale contracts in XFA; transition to Live Funded Account with full institutional backing",
+          "prohibited_strategies": "Exploiting simulator fills, tick scalping arbitrage",
+          "source_url": "https://topstep.com/trading-combine/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - Micro Combine ($100,000)": {
+        "account_size": 100000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 4800,
+            "trailing_drawdown_amount": 3000,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 2,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "50 Micro Contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 3000,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 100,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Daily on request",
+            "first_payout_waiting_time": "5 winning days",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 3000
+          }
+        },
+        "rules": {
+          "fee_regular": 74,
+          "fee_discounted": 49,
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$149 one-time activation fee for Express Funded Account (XFA)",
+          "platforms": "TopstepX, NinjaTrader, Tradovate, TradingView, Quantower",
+          "contract_limits": "Micros only (up to 50 micros)",
+          "trailing_threshold": "$2,000 Maximum Loss Limit (EOD Trailing)",
           "trailing_stop_lock": "Locks at starting balance permanently once reached",
           "scaling_by_contracts": "Contract scaling plan applies in Express Funded Account based on account balance tiers",
           "eod_flat_requirement": "Yes, all trades closed by 4:10 PM EST / 3:10 PM CST",
@@ -11025,33 +11547,33 @@ footer {
           "evaluation": {
             "profit_target_amount": 9000,
             "trailing_drawdown_amount": 4500,
-            "drawdown_type": "End-of-Day (EOD) Trailing",
-            "daily_loss_limit_amount": 3000,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
             "min_trading_days": 2,
-            "max_time_limit": "Unlimited (monthly recurring subscription)",
-            "contract_limits": "15 minis / 150 micros"
+            "max_time_limit": "Unlimited",
+            "contract_limits": "15 contracts"
           },
           "funded": {
             "profit_target_amount": 0,
             "trailing_drawdown_amount": 4500,
-            "drawdown_type": "End-of-Day (EOD) Trailing",
-            "daily_loss_limit_amount": 3000,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
             "profit_split_starting_pct": 100,
             "profit_split_max_pct": 90,
-            "payout_frequency": "On-demand during market hours once eligibility is met",
-            "first_payout_waiting_time": "After 5 winning days (+$200/day)",
-            "min_winning_days_for_payout": "5 winning days of at least +$200 profit",
-            "payout_cap_per_withdrawal": "50% of account balance (capped at $2,000 per payout for first 3 payouts)"
+            "payout_frequency": "Daily on request (up to 50% of balance per payout)",
+            "first_payout_waiting_time": "5 winning days of $200+",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 5000
           }
         },
         "rules": {
-          "fee_regular": 375,
-          "fee_discounted": 149,
+          "fee_regular": 149,
+          "fee_discounted": 49,
           "fee_refundable": "No (Subscription-based)",
           "activation_fee": "$149 one-time activation fee for Express Funded Account (XFA)",
           "platforms": "TopstepX, NinjaTrader, Tradovate, TradingView, Quantower",
-          "contract_limits": "15 minis / 150 micros",
-          "trailing_threshold": "$4,500 Maximum Loss Limit (EOD Trailing)",
+          "contract_limits": "15 contracts",
+          "trailing_threshold": "$2,000 Maximum Loss Limit (EOD Trailing)",
           "trailing_stop_lock": "Locks at starting balance permanently once reached",
           "scaling_by_contracts": "Contract scaling plan applies in Express Funded Account based on account balance tiers",
           "eod_flat_requirement": "Yes, all trades closed by 4:10 PM EST / 3:10 PM CST",
@@ -11078,23 +11600,23 @@ footer {
           "evaluation": {
             "profit_target_amount": 1500,
             "trailing_drawdown_amount": 1500,
-            "drawdown_type": "End-of-Day (EOD) Trailing in Test; Trailing to starting balance in PRO",
-            "daily_loss_limit_amount": "None (No daily loss limit enforced)",
-            "min_trading_days": 3,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 500,
+            "min_trading_days": 5,
             "max_time_limit": "Unlimited",
-            "contract_limits": "3 minis / 30 micros"
+            "contract_limits": "3 contracts"
           },
           "funded": {
             "profit_target_amount": 0,
             "trailing_drawdown_amount": 1500,
-            "drawdown_type": "End-of-Day (EOD) Trailing in Test; Trailing to starting balance in PRO",
-            "daily_loss_limit_amount": "None (No daily loss limit enforced)",
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 500,
             "profit_split_starting_pct": 80,
             "profit_split_max_pct": 90,
-            "payout_frequency": "Day One Payouts (daily on-demand upon buffer completion)",
-            "first_payout_waiting_time": "0 days (Day 1 once buffer is achieved)",
-            "min_winning_days_for_payout": "0 days once buffer is met",
-            "payout_cap_per_withdrawal": "No cap on PRO+ account; PRO account withdrawal allowed above buffer zone"
+            "payout_frequency": "Day 1 payouts on PRO Account!",
+            "first_payout_waiting_time": "Immediate on Day 1",
+            "min_winning_days_for_payout": 0,
+            "payout_cap_per_withdrawal": 5000
           }
         },
         "rules": {
@@ -11103,7 +11625,58 @@ footer {
           "fee_refundable": "No (Subscription-based)",
           "activation_fee": "$130 one-time activation fee on PRO account",
           "platforms": "NinjaTrader, Tradovate, TradingView, Quantower",
-          "contract_limits": "3 minis / 30 micros",
+          "contract_limits": "3 contracts",
+          "trailing_threshold": "$1,500 EOD Trailing Drawdown",
+          "trailing_stop_lock": "Locks at starting balance",
+          "scaling_by_contracts": "Contract limits scale with account size",
+          "eod_flat_requirement": "Yes, flat by 4:59 PM EST",
+          "trading_hours": "CME Market Hours: 6:00 PM EST to 4:59 PM EST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX futures",
+          "consistency_rule": "50% rule (no single day can account for >50% profit target)",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Prohibited (must close all trades before weekend)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "inactivity_days": 30,
+          "scaling_plan_details": "PRO+ upgrade invites for consistent traders with live broker routing and 90% split",
+          "prohibited_strategies": "Latency arbitrage, tick scalping glitches",
+          "source_url": "https://takeprofittrader.com/rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - PRO Test (No Daily Loss) ($25,000)": {
+        "account_size": 25000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 1500,
+            "trailing_drawdown_amount": 1500,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 5,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "3 contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 1500,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Day 1 payout on Pro account",
+            "first_payout_waiting_time": "Day 1",
+            "min_winning_days_for_payout": 0,
+            "payout_cap_per_withdrawal": 5000
+          }
+        },
+        "rules": {
+          "fee_regular": 180,
+          "fee_discounted": "None",
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$130 one-time activation fee on PRO account",
+          "platforms": "NinjaTrader, Tradovate, TradingView, Quantower",
+          "contract_limits": "3 contracts",
           "trailing_threshold": "$1,500 EOD Trailing Drawdown",
           "trailing_stop_lock": "Locks at starting balance",
           "scaling_by_contracts": "Contract limits scale with account size",
@@ -11129,23 +11702,23 @@ footer {
           "evaluation": {
             "profit_target_amount": 3000,
             "trailing_drawdown_amount": 2000,
-            "drawdown_type": "End-of-Day (EOD) Trailing in Test; Trailing to starting balance in PRO",
-            "daily_loss_limit_amount": "None (No daily loss limit enforced)",
-            "min_trading_days": 3,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 1000,
+            "min_trading_days": 5,
             "max_time_limit": "Unlimited",
-            "contract_limits": "6 minis / 60 micros"
+            "contract_limits": "6 contracts"
           },
           "funded": {
             "profit_target_amount": 0,
             "trailing_drawdown_amount": 2000,
-            "drawdown_type": "End-of-Day (EOD) Trailing in Test; Trailing to starting balance in PRO",
-            "daily_loss_limit_amount": "None (No daily loss limit enforced)",
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 1000,
             "profit_split_starting_pct": 80,
             "profit_split_max_pct": 90,
-            "payout_frequency": "Day One Payouts (daily on-demand upon buffer completion)",
-            "first_payout_waiting_time": "0 days (Day 1 once buffer is achieved)",
-            "min_winning_days_for_payout": "0 days once buffer is met",
-            "payout_cap_per_withdrawal": "No cap on PRO+ account; PRO account withdrawal allowed above buffer zone"
+            "payout_frequency": "Day 1 payouts on PRO Account!",
+            "first_payout_waiting_time": "Immediate on Day 1",
+            "min_winning_days_for_payout": 0,
+            "payout_cap_per_withdrawal": 5000
           }
         },
         "rules": {
@@ -11154,8 +11727,59 @@ footer {
           "fee_refundable": "No (Subscription-based)",
           "activation_fee": "$130 one-time activation fee on PRO account",
           "platforms": "NinjaTrader, Tradovate, TradingView, Quantower",
-          "contract_limits": "6 minis / 60 micros",
-          "trailing_threshold": "$2,000 EOD Trailing Drawdown",
+          "contract_limits": "6 contracts",
+          "trailing_threshold": "$1,500 EOD Trailing Drawdown",
+          "trailing_stop_lock": "Locks at starting balance",
+          "scaling_by_contracts": "Contract limits scale with account size",
+          "eod_flat_requirement": "Yes, flat by 4:59 PM EST",
+          "trading_hours": "CME Market Hours: 6:00 PM EST to 4:59 PM EST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX futures",
+          "consistency_rule": "50% rule (no single day can account for >50% profit target)",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Prohibited (must close all trades before weekend)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "inactivity_days": 30,
+          "scaling_plan_details": "PRO+ upgrade invites for consistent traders with live broker routing and 90% split",
+          "prohibited_strategies": "Latency arbitrage, tick scalping glitches",
+          "source_url": "https://takeprofittrader.com/rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - PRO Test (No Daily Loss) ($50,000)": {
+        "account_size": 50000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 3000,
+            "trailing_drawdown_amount": 2000,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 5,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "6 contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 2000,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Day 1 payout on Pro account",
+            "first_payout_waiting_time": "Day 1",
+            "min_winning_days_for_payout": 0,
+            "payout_cap_per_withdrawal": 5000
+          }
+        },
+        "rules": {
+          "fee_regular": 204,
+          "fee_discounted": "None",
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$130 one-time activation fee on PRO account",
+          "platforms": "NinjaTrader, Tradovate, TradingView, Quantower",
+          "contract_limits": "6 contracts",
+          "trailing_threshold": "$1,500 EOD Trailing Drawdown",
           "trailing_stop_lock": "Locks at starting balance",
           "scaling_by_contracts": "Contract limits scale with account size",
           "eod_flat_requirement": "Yes, flat by 4:59 PM EST",
@@ -11180,23 +11804,23 @@ footer {
           "evaluation": {
             "profit_target_amount": 4500,
             "trailing_drawdown_amount": 2500,
-            "drawdown_type": "End-of-Day (EOD) Trailing in Test; Trailing to starting balance in PRO",
-            "daily_loss_limit_amount": "None (No daily loss limit enforced)",
-            "min_trading_days": 3,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 1500,
+            "min_trading_days": 5,
             "max_time_limit": "Unlimited",
-            "contract_limits": "9 minis / 90 micros"
+            "contract_limits": "9 contracts"
           },
           "funded": {
             "profit_target_amount": 0,
             "trailing_drawdown_amount": 2500,
-            "drawdown_type": "End-of-Day (EOD) Trailing in Test; Trailing to starting balance in PRO",
-            "daily_loss_limit_amount": "None (No daily loss limit enforced)",
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 1500,
             "profit_split_starting_pct": 80,
             "profit_split_max_pct": 90,
-            "payout_frequency": "Day One Payouts (daily on-demand upon buffer completion)",
-            "first_payout_waiting_time": "0 days (Day 1 once buffer is achieved)",
-            "min_winning_days_for_payout": "0 days once buffer is met",
-            "payout_cap_per_withdrawal": "No cap on PRO+ account; PRO account withdrawal allowed above buffer zone"
+            "payout_frequency": "Day 1 payouts on PRO Account!",
+            "first_payout_waiting_time": "Immediate on Day 1",
+            "min_winning_days_for_payout": 0,
+            "payout_cap_per_withdrawal": 5000
           }
         },
         "rules": {
@@ -11205,8 +11829,59 @@ footer {
           "fee_refundable": "No (Subscription-based)",
           "activation_fee": "$130 one-time activation fee on PRO account",
           "platforms": "NinjaTrader, Tradovate, TradingView, Quantower",
-          "contract_limits": "9 minis / 90 micros",
-          "trailing_threshold": "$2,500 EOD Trailing Drawdown",
+          "contract_limits": "9 contracts",
+          "trailing_threshold": "$1,500 EOD Trailing Drawdown",
+          "trailing_stop_lock": "Locks at starting balance",
+          "scaling_by_contracts": "Contract limits scale with account size",
+          "eod_flat_requirement": "Yes, flat by 4:59 PM EST",
+          "trading_hours": "CME Market Hours: 6:00 PM EST to 4:59 PM EST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX futures",
+          "consistency_rule": "50% rule (no single day can account for >50% profit target)",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Prohibited (must close all trades before weekend)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "inactivity_days": 30,
+          "scaling_plan_details": "PRO+ upgrade invites for consistent traders with live broker routing and 90% split",
+          "prohibited_strategies": "Latency arbitrage, tick scalping glitches",
+          "source_url": "https://takeprofittrader.com/rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - PRO Test (No Daily Loss) ($75,000)": {
+        "account_size": 75000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 4500,
+            "trailing_drawdown_amount": 2500,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 5,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "9 contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 2500,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Day 1 payout on Pro account",
+            "first_payout_waiting_time": "Day 1",
+            "min_winning_days_for_payout": 0,
+            "payout_cap_per_withdrawal": 5000
+          }
+        },
+        "rules": {
+          "fee_regular": 294,
+          "fee_discounted": "None",
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$130 one-time activation fee on PRO account",
+          "platforms": "NinjaTrader, Tradovate, TradingView, Quantower",
+          "contract_limits": "9 contracts",
+          "trailing_threshold": "$1,500 EOD Trailing Drawdown",
           "trailing_stop_lock": "Locks at starting balance",
           "scaling_by_contracts": "Contract limits scale with account size",
           "eod_flat_requirement": "Yes, flat by 4:59 PM EST",
@@ -11231,23 +11906,23 @@ footer {
           "evaluation": {
             "profit_target_amount": 6000,
             "trailing_drawdown_amount": 3000,
-            "drawdown_type": "End-of-Day (EOD) Trailing in Test; Trailing to starting balance in PRO",
-            "daily_loss_limit_amount": "None (No daily loss limit enforced)",
-            "min_trading_days": 3,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 2000,
+            "min_trading_days": 5,
             "max_time_limit": "Unlimited",
-            "contract_limits": "12 minis / 120 micros"
+            "contract_limits": "12 contracts"
           },
           "funded": {
             "profit_target_amount": 0,
             "trailing_drawdown_amount": 3000,
-            "drawdown_type": "End-of-Day (EOD) Trailing in Test; Trailing to starting balance in PRO",
-            "daily_loss_limit_amount": "None (No daily loss limit enforced)",
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 2000,
             "profit_split_starting_pct": 80,
             "profit_split_max_pct": 90,
-            "payout_frequency": "Day One Payouts (daily on-demand upon buffer completion)",
-            "first_payout_waiting_time": "0 days (Day 1 once buffer is achieved)",
-            "min_winning_days_for_payout": "0 days once buffer is met",
-            "payout_cap_per_withdrawal": "No cap on PRO+ account; PRO account withdrawal allowed above buffer zone"
+            "payout_frequency": "Day 1 payouts on PRO Account!",
+            "first_payout_waiting_time": "Immediate on Day 1",
+            "min_winning_days_for_payout": 0,
+            "payout_cap_per_withdrawal": 5000
           }
         },
         "rules": {
@@ -11256,8 +11931,59 @@ footer {
           "fee_refundable": "No (Subscription-based)",
           "activation_fee": "$130 one-time activation fee on PRO account",
           "platforms": "NinjaTrader, Tradovate, TradingView, Quantower",
-          "contract_limits": "12 minis / 120 micros",
-          "trailing_threshold": "$3,000 EOD Trailing Drawdown",
+          "contract_limits": "12 contracts",
+          "trailing_threshold": "$1,500 EOD Trailing Drawdown",
+          "trailing_stop_lock": "Locks at starting balance",
+          "scaling_by_contracts": "Contract limits scale with account size",
+          "eod_flat_requirement": "Yes, flat by 4:59 PM EST",
+          "trading_hours": "CME Market Hours: 6:00 PM EST to 4:59 PM EST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX futures",
+          "consistency_rule": "50% rule (no single day can account for >50% profit target)",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Prohibited (must close all trades before weekend)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "inactivity_days": 30,
+          "scaling_plan_details": "PRO+ upgrade invites for consistent traders with live broker routing and 90% split",
+          "prohibited_strategies": "Latency arbitrage, tick scalping glitches",
+          "source_url": "https://takeprofittrader.com/rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - PRO Test (No Daily Loss) ($100,000)": {
+        "account_size": 100000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 6000,
+            "trailing_drawdown_amount": 3000,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 5,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "12 contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 3000,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Day 1 payout on Pro account",
+            "first_payout_waiting_time": "Day 1",
+            "min_winning_days_for_payout": 0,
+            "payout_cap_per_withdrawal": 5000
+          }
+        },
+        "rules": {
+          "fee_regular": 396,
+          "fee_discounted": "None",
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$130 one-time activation fee on PRO account",
+          "platforms": "NinjaTrader, Tradovate, TradingView, Quantower",
+          "contract_limits": "12 contracts",
+          "trailing_threshold": "$1,500 EOD Trailing Drawdown",
           "trailing_stop_lock": "Locks at starting balance",
           "scaling_by_contracts": "Contract limits scale with account size",
           "eod_flat_requirement": "Yes, flat by 4:59 PM EST",
@@ -11282,23 +12008,23 @@ footer {
           "evaluation": {
             "profit_target_amount": 9000,
             "trailing_drawdown_amount": 4500,
-            "drawdown_type": "End-of-Day (EOD) Trailing in Test; Trailing to starting balance in PRO",
-            "daily_loss_limit_amount": "None (No daily loss limit enforced)",
-            "min_trading_days": 3,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 3000,
+            "min_trading_days": 5,
             "max_time_limit": "Unlimited",
-            "contract_limits": "15 minis / 150 micros"
+            "contract_limits": "15 contracts"
           },
           "funded": {
             "profit_target_amount": 0,
             "trailing_drawdown_amount": 4500,
-            "drawdown_type": "End-of-Day (EOD) Trailing in Test; Trailing to starting balance in PRO",
-            "daily_loss_limit_amount": "None (No daily loss limit enforced)",
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 3000,
             "profit_split_starting_pct": 80,
             "profit_split_max_pct": 90,
-            "payout_frequency": "Day One Payouts (daily on-demand upon buffer completion)",
-            "first_payout_waiting_time": "0 days (Day 1 once buffer is achieved)",
-            "min_winning_days_for_payout": "0 days once buffer is met",
-            "payout_cap_per_withdrawal": "No cap on PRO+ account; PRO account withdrawal allowed above buffer zone"
+            "payout_frequency": "Day 1 payouts on PRO Account!",
+            "first_payout_waiting_time": "Immediate on Day 1",
+            "min_winning_days_for_payout": 0,
+            "payout_cap_per_withdrawal": 5000
           }
         },
         "rules": {
@@ -11307,8 +12033,59 @@ footer {
           "fee_refundable": "No (Subscription-based)",
           "activation_fee": "$130 one-time activation fee on PRO account",
           "platforms": "NinjaTrader, Tradovate, TradingView, Quantower",
-          "contract_limits": "15 minis / 150 micros",
-          "trailing_threshold": "$4,500 EOD Trailing Drawdown",
+          "contract_limits": "15 contracts",
+          "trailing_threshold": "$1,500 EOD Trailing Drawdown",
+          "trailing_stop_lock": "Locks at starting balance",
+          "scaling_by_contracts": "Contract limits scale with account size",
+          "eod_flat_requirement": "Yes, flat by 4:59 PM EST",
+          "trading_hours": "CME Market Hours: 6:00 PM EST to 4:59 PM EST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX futures",
+          "consistency_rule": "50% rule (no single day can account for >50% profit target)",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Prohibited (must close all trades before weekend)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "inactivity_days": 30,
+          "scaling_plan_details": "PRO+ upgrade invites for consistent traders with live broker routing and 90% split",
+          "prohibited_strategies": "Latency arbitrage, tick scalping glitches",
+          "source_url": "https://takeprofittrader.com/rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - PRO Test (No Daily Loss) ($150,000)": {
+        "account_size": 150000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 9000,
+            "trailing_drawdown_amount": 4500,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 5,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "15 contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 4500,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Day 1 payout on Pro account",
+            "first_payout_waiting_time": "Day 1",
+            "min_winning_days_for_payout": 0,
+            "payout_cap_per_withdrawal": 5000
+          }
+        },
+        "rules": {
+          "fee_regular": 432,
+          "fee_discounted": "None",
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$130 one-time activation fee on PRO account",
+          "platforms": "NinjaTrader, Tradovate, TradingView, Quantower",
+          "contract_limits": "15 contracts",
+          "trailing_threshold": "$1,500 EOD Trailing Drawdown",
           "trailing_stop_lock": "Locks at starting balance",
           "scaling_by_contracts": "Contract limits scale with account size",
           "eod_flat_requirement": "Yes, flat by 4:59 PM EST",
@@ -11643,27 +12420,129 @@ footer {
           "evaluation": {
             "profit_target_amount": 1500,
             "trailing_drawdown_amount": 1500,
-            "drawdown_type": "End-of-Day (EOD) Trailing",
-            "daily_loss_limit_amount": 600,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
             "min_trading_days": 1,
             "max_time_limit": "Unlimited",
-            "contract_limits": "3 minis / 30 micros"
+            "contract_limits": "3 contracts"
           },
           "funded": {
             "profit_target_amount": 0,
             "trailing_drawdown_amount": 1500,
-            "drawdown_type": "End-of-Day (EOD) Trailing",
-            "daily_loss_limit_amount": 600,
-            "profit_split_starting_pct": 100,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 90,
             "profit_split_max_pct": 90,
-            "payout_frequency": "Weekly / Bi-weekly",
-            "first_payout_waiting_time": "After 5 winning days",
-            "min_winning_days_for_payout": "5 winning days of at least +$200 profit",
-            "payout_cap_per_withdrawal": "$2,000 max per payout for first 3 payouts"
+            "payout_frequency": "Daily payouts available",
+            "first_payout_waiting_time": "10 trading days",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 3000
           }
         },
         "rules": {
-          "fee_regular": 120,
+          "fee_regular": 99,
+          "fee_discounted": "None",
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$125 one-time activation fee on funded",
+          "platforms": "NinjaTrader, Tradovate, TradingView",
+          "contract_limits": "3 contracts",
+          "trailing_threshold": "$1,500 EOD Trailing Drawdown",
+          "trailing_stop_lock": "Locks at starting balance",
+          "scaling_by_contracts": "Contract limits scale with account size",
+          "eod_flat_requirement": "Yes, flat by 4:59 PM EST",
+          "trading_hours": "CME Market Hours: 6:00 PM EST to 4:59 PM EST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX futures",
+          "consistency_rule": "None in evaluation; 35% consistency rule applies on funded payouts",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Prohibited (all trades flat before weekend)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "inactivity_days": 30,
+          "scaling_plan_details": "Scale up to $500,000 total allocation",
+          "prohibited_strategies": "Latency arbitrage, tick scalping bugs",
+          "source_url": "https://tradeify.co/rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - ADVANCED Plan ($25,000)": {
+        "account_size": 25000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 1500,
+            "trailing_drawdown_amount": 1500,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 1,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "3 contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 1500,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 90,
+            "profit_split_max_pct": 95,
+            "payout_frequency": "Daily payouts",
+            "first_payout_waiting_time": "5 trading days",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 5000
+          }
+        },
+        "rules": {
+          "fee_regular": 134,
+          "fee_discounted": "None",
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$125 one-time activation fee on funded",
+          "platforms": "NinjaTrader, Tradovate, TradingView",
+          "contract_limits": "3 contracts",
+          "trailing_threshold": "$1,500 EOD Trailing Drawdown",
+          "trailing_stop_lock": "Locks at starting balance",
+          "scaling_by_contracts": "Contract limits scale with account size",
+          "eod_flat_requirement": "Yes, flat by 4:59 PM EST",
+          "trading_hours": "CME Market Hours: 6:00 PM EST to 4:59 PM EST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX futures",
+          "consistency_rule": "None in evaluation; 35% consistency rule applies on funded payouts",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Prohibited (all trades flat before weekend)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "inactivity_days": 30,
+          "scaling_plan_details": "Scale up to $500,000 total allocation",
+          "prohibited_strategies": "Latency arbitrage, tick scalping bugs",
+          "source_url": "https://tradeify.co/rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - LIGHTNING Plan (1-Day Pass) ($25,000)": {
+        "account_size": 25000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 1500,
+            "trailing_drawdown_amount": 1500,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 1,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "3 contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 1500,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 90,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Bi-weekly",
+            "first_payout_waiting_time": "14 days",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 2500
+          }
+        },
+        "rules": {
+          "fee_regular": 109,
           "fee_discounted": "None",
           "fee_refundable": "No (Subscription-based)",
           "activation_fee": "$125 one-time activation fee on funded",
@@ -11694,33 +12573,135 @@ footer {
           "evaluation": {
             "profit_target_amount": 3000,
             "trailing_drawdown_amount": 2000,
-            "drawdown_type": "End-of-Day (EOD) Trailing",
-            "daily_loss_limit_amount": 1250,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
             "min_trading_days": 1,
             "max_time_limit": "Unlimited",
-            "contract_limits": "6 minis / 60 micros"
+            "contract_limits": "6 contracts"
           },
           "funded": {
             "profit_target_amount": 0,
             "trailing_drawdown_amount": 2000,
-            "drawdown_type": "End-of-Day (EOD) Trailing",
-            "daily_loss_limit_amount": 1250,
-            "profit_split_starting_pct": 100,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 90,
             "profit_split_max_pct": 90,
-            "payout_frequency": "Weekly / Bi-weekly",
-            "first_payout_waiting_time": "After 5 winning days",
-            "min_winning_days_for_payout": "5 winning days of at least +$200 profit",
-            "payout_cap_per_withdrawal": "$2,000 max per payout for first 3 payouts"
+            "payout_frequency": "Daily payouts available",
+            "first_payout_waiting_time": "10 trading days",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 3000
           }
         },
         "rules": {
-          "fee_regular": 160,
+          "fee_regular": 149,
           "fee_discounted": "None",
           "fee_refundable": "No (Subscription-based)",
           "activation_fee": "$125 one-time activation fee on funded",
           "platforms": "NinjaTrader, Tradovate, TradingView",
-          "contract_limits": "6 minis / 60 micros",
-          "trailing_threshold": "$2,000 EOD Trailing Drawdown",
+          "contract_limits": "6 contracts",
+          "trailing_threshold": "$1,500 EOD Trailing Drawdown",
+          "trailing_stop_lock": "Locks at starting balance",
+          "scaling_by_contracts": "Contract limits scale with account size",
+          "eod_flat_requirement": "Yes, flat by 4:59 PM EST",
+          "trading_hours": "CME Market Hours: 6:00 PM EST to 4:59 PM EST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX futures",
+          "consistency_rule": "None in evaluation; 35% consistency rule applies on funded payouts",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Prohibited (all trades flat before weekend)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "inactivity_days": 30,
+          "scaling_plan_details": "Scale up to $500,000 total allocation",
+          "prohibited_strategies": "Latency arbitrage, tick scalping bugs",
+          "source_url": "https://tradeify.co/rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - ADVANCED Plan ($50,000)": {
+        "account_size": 50000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 3000,
+            "trailing_drawdown_amount": 2000,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 1,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "6 contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 2000,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 90,
+            "profit_split_max_pct": 95,
+            "payout_frequency": "Daily payouts",
+            "first_payout_waiting_time": "5 trading days",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 5000
+          }
+        },
+        "rules": {
+          "fee_regular": 201,
+          "fee_discounted": "None",
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$125 one-time activation fee on funded",
+          "platforms": "NinjaTrader, Tradovate, TradingView",
+          "contract_limits": "6 contracts",
+          "trailing_threshold": "$1,500 EOD Trailing Drawdown",
+          "trailing_stop_lock": "Locks at starting balance",
+          "scaling_by_contracts": "Contract limits scale with account size",
+          "eod_flat_requirement": "Yes, flat by 4:59 PM EST",
+          "trading_hours": "CME Market Hours: 6:00 PM EST to 4:59 PM EST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX futures",
+          "consistency_rule": "None in evaluation; 35% consistency rule applies on funded payouts",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Prohibited (all trades flat before weekend)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "inactivity_days": 30,
+          "scaling_plan_details": "Scale up to $500,000 total allocation",
+          "prohibited_strategies": "Latency arbitrage, tick scalping bugs",
+          "source_url": "https://tradeify.co/rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - LIGHTNING Plan (1-Day Pass) ($50,000)": {
+        "account_size": 50000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 3000,
+            "trailing_drawdown_amount": 2000,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 1,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "6 contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 2000,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 90,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Bi-weekly",
+            "first_payout_waiting_time": "14 days",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 2500
+          }
+        },
+        "rules": {
+          "fee_regular": 164,
+          "fee_discounted": "None",
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$125 one-time activation fee on funded",
+          "platforms": "NinjaTrader, Tradovate, TradingView",
+          "contract_limits": "3 minis / 30 micros",
+          "trailing_threshold": "$1,500 EOD Trailing Drawdown",
           "trailing_stop_lock": "Locks at starting balance",
           "scaling_by_contracts": "Contract limits scale with account size",
           "eod_flat_requirement": "Yes, flat by 4:59 PM EST",
@@ -11745,33 +12726,135 @@ footer {
           "evaluation": {
             "profit_target_amount": 6000,
             "trailing_drawdown_amount": 3000,
-            "drawdown_type": "End-of-Day (EOD) Trailing",
-            "daily_loss_limit_amount": 2500,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
             "min_trading_days": 1,
             "max_time_limit": "Unlimited",
-            "contract_limits": "12 minis / 120 micros"
+            "contract_limits": "12 contracts"
           },
           "funded": {
             "profit_target_amount": 0,
             "trailing_drawdown_amount": 3000,
-            "drawdown_type": "End-of-Day (EOD) Trailing",
-            "daily_loss_limit_amount": 2500,
-            "profit_split_starting_pct": 100,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 90,
             "profit_split_max_pct": 90,
-            "payout_frequency": "Weekly / Bi-weekly",
-            "first_payout_waiting_time": "After 5 winning days",
-            "min_winning_days_for_payout": "5 winning days of at least +$200 profit",
-            "payout_cap_per_withdrawal": "$2,000 max per payout for first 3 payouts"
+            "payout_frequency": "Daily payouts available",
+            "first_payout_waiting_time": "10 trading days",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 3000
           }
         },
         "rules": {
-          "fee_regular": 310,
+          "fee_regular": 249,
           "fee_discounted": "None",
           "fee_refundable": "No (Subscription-based)",
           "activation_fee": "$125 one-time activation fee on funded",
           "platforms": "NinjaTrader, Tradovate, TradingView",
-          "contract_limits": "12 minis / 120 micros",
-          "trailing_threshold": "$3,000 EOD Trailing Drawdown",
+          "contract_limits": "12 contracts",
+          "trailing_threshold": "$1,500 EOD Trailing Drawdown",
+          "trailing_stop_lock": "Locks at starting balance",
+          "scaling_by_contracts": "Contract limits scale with account size",
+          "eod_flat_requirement": "Yes, flat by 4:59 PM EST",
+          "trading_hours": "CME Market Hours: 6:00 PM EST to 4:59 PM EST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX futures",
+          "consistency_rule": "None in evaluation; 35% consistency rule applies on funded payouts",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Prohibited (all trades flat before weekend)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "inactivity_days": 30,
+          "scaling_plan_details": "Scale up to $500,000 total allocation",
+          "prohibited_strategies": "Latency arbitrage, tick scalping bugs",
+          "source_url": "https://tradeify.co/rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - ADVANCED Plan ($100,000)": {
+        "account_size": 100000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 6000,
+            "trailing_drawdown_amount": 3000,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 1,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "12 contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 3000,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 90,
+            "profit_split_max_pct": 95,
+            "payout_frequency": "Daily payouts",
+            "first_payout_waiting_time": "5 trading days",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 5000
+          }
+        },
+        "rules": {
+          "fee_regular": 336,
+          "fee_discounted": "None",
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$125 one-time activation fee on funded",
+          "platforms": "NinjaTrader, Tradovate, TradingView",
+          "contract_limits": "12 contracts",
+          "trailing_threshold": "$1,500 EOD Trailing Drawdown",
+          "trailing_stop_lock": "Locks at starting balance",
+          "scaling_by_contracts": "Contract limits scale with account size",
+          "eod_flat_requirement": "Yes, flat by 4:59 PM EST",
+          "trading_hours": "CME Market Hours: 6:00 PM EST to 4:59 PM EST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX futures",
+          "consistency_rule": "None in evaluation; 35% consistency rule applies on funded payouts",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Prohibited (all trades flat before weekend)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "inactivity_days": 30,
+          "scaling_plan_details": "Scale up to $500,000 total allocation",
+          "prohibited_strategies": "Latency arbitrage, tick scalping bugs",
+          "source_url": "https://tradeify.co/rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - LIGHTNING Plan (1-Day Pass) ($100,000)": {
+        "account_size": 100000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 6000,
+            "trailing_drawdown_amount": 3000,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 1,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "12 contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 3000,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 90,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Bi-weekly",
+            "first_payout_waiting_time": "14 days",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 2500
+          }
+        },
+        "rules": {
+          "fee_regular": 274,
+          "fee_discounted": "None",
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$125 one-time activation fee on funded",
+          "platforms": "NinjaTrader, Tradovate, TradingView",
+          "contract_limits": "3 minis / 30 micros",
+          "trailing_threshold": "$1,500 EOD Trailing Drawdown",
           "trailing_stop_lock": "Locks at starting balance",
           "scaling_by_contracts": "Contract limits scale with account size",
           "eod_flat_requirement": "Yes, flat by 4:59 PM EST",
@@ -11796,33 +12879,84 @@ footer {
           "evaluation": {
             "profit_target_amount": 9000,
             "trailing_drawdown_amount": 4500,
-            "drawdown_type": "End-of-Day (EOD) Trailing",
-            "daily_loss_limit_amount": 3750,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
             "min_trading_days": 1,
             "max_time_limit": "Unlimited",
-            "contract_limits": "15 minis / 150 micros"
+            "contract_limits": "15 contracts"
           },
           "funded": {
             "profit_target_amount": 0,
             "trailing_drawdown_amount": 4500,
-            "drawdown_type": "End-of-Day (EOD) Trailing",
-            "daily_loss_limit_amount": 3750,
-            "profit_split_starting_pct": 100,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 90,
             "profit_split_max_pct": 90,
-            "payout_frequency": "Weekly / Bi-weekly",
-            "first_payout_waiting_time": "After 5 winning days",
-            "min_winning_days_for_payout": "5 winning days of at least +$200 profit",
-            "payout_cap_per_withdrawal": "$2,000 max per payout for first 3 payouts"
+            "payout_frequency": "Daily payouts available",
+            "first_payout_waiting_time": "10 trading days",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 3000
           }
         },
         "rules": {
-          "fee_regular": 360,
+          "fee_regular": 349,
           "fee_discounted": "None",
           "fee_refundable": "No (Subscription-based)",
           "activation_fee": "$125 one-time activation fee on funded",
           "platforms": "NinjaTrader, Tradovate, TradingView",
-          "contract_limits": "15 minis / 150 micros",
-          "trailing_threshold": "$4,500 EOD Trailing Drawdown",
+          "contract_limits": "15 contracts",
+          "trailing_threshold": "$1,500 EOD Trailing Drawdown",
+          "trailing_stop_lock": "Locks at starting balance",
+          "scaling_by_contracts": "Contract limits scale with account size",
+          "eod_flat_requirement": "Yes, flat by 4:59 PM EST",
+          "trading_hours": "CME Market Hours: 6:00 PM EST to 4:59 PM EST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX futures",
+          "consistency_rule": "None in evaluation; 35% consistency rule applies on funded payouts",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Prohibited (all trades flat before weekend)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "inactivity_days": 30,
+          "scaling_plan_details": "Scale up to $500,000 total allocation",
+          "prohibited_strategies": "Latency arbitrage, tick scalping bugs",
+          "source_url": "https://tradeify.co/rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - ADVANCED Plan ($150,000)": {
+        "account_size": 150000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 9000,
+            "trailing_drawdown_amount": 4500,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 1,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "15 contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 4500,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 90,
+            "profit_split_max_pct": 95,
+            "payout_frequency": "Daily payouts",
+            "first_payout_waiting_time": "5 trading days",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 5000
+          }
+        },
+        "rules": {
+          "fee_regular": 471,
+          "fee_discounted": "None",
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$125 one-time activation fee on funded",
+          "platforms": "NinjaTrader, Tradovate, TradingView",
+          "contract_limits": "15 contracts",
+          "trailing_threshold": "$1,500 EOD Trailing Drawdown",
           "trailing_stop_lock": "Locks at starting balance",
           "scaling_by_contracts": "Contract limits scale with account size",
           "eod_flat_requirement": "Yes, flat by 4:59 PM EST",
@@ -11842,30 +12976,30 @@ footer {
       }
     },
     "Bulenox": {
-      "Evaluation - Option 1 (Trailing) ($25,000)": {
+      "Evaluation - Option 1 (Trailing Drawdown) ($25,000)": {
         "account_size": 25000,
         "currency": "USD",
         "phases": {
           "evaluation": {
             "profit_target_amount": 1500,
-            "trailing_drawdown_amount": 1000,
-            "drawdown_type": "Intraday Trailing",
-            "daily_loss_limit_amount": "None (No DLL on Option 1)",
-            "min_trading_days": 0,
+            "trailing_drawdown_amount": 1500,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 5,
             "max_time_limit": "Unlimited",
-            "contract_limits": "3 minis / 30 micros"
+            "contract_limits": "3 contracts"
           },
           "funded": {
             "profit_target_amount": 0,
-            "trailing_drawdown_amount": 1000,
-            "drawdown_type": "Intraday Trailing",
-            "daily_loss_limit_amount": "None (No DLL on Option 1)",
+            "trailing_drawdown_amount": 1500,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
             "profit_split_starting_pct": 100,
             "profit_split_max_pct": 90,
-            "payout_frequency": "Weekly (processed Wednesdays)",
-            "first_payout_waiting_time": "After 10 qualified trading days",
-            "min_winning_days_for_payout": "10 separate trading days with active profit",
-            "payout_cap_per_withdrawal": "$1,000 to $2,000 per payout for first 3 payouts depending on account size"
+            "payout_frequency": "Twice monthly",
+            "first_payout_waiting_time": "10 trading days",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 1500
           }
         },
         "rules": {
@@ -11893,30 +13027,81 @@ footer {
           "verification_date": "2026-11-11"
         }
       },
-      "Evaluation - Option 1 (Trailing) ($50,000)": {
+      "Evaluation - Option 2 (EOD Drawdown) ($25,000)": {
+        "account_size": 25000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 1500,
+            "trailing_drawdown_amount": 1500,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 5,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "3 contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 1500,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 100,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Twice monthly",
+            "first_payout_waiting_time": "10 trading days",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 1500
+          }
+        },
+        "rules": {
+          "fee_regular": 145,
+          "fee_discounted": "None",
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$148 one-time activation fee or $98/month on Master account",
+          "platforms": "NinjaTrader, Rithmic, Tradovate",
+          "contract_limits": "3 minis / 30 micros",
+          "trailing_threshold": "$1,000 Trailing Threshold",
+          "trailing_stop_lock": "Locks at starting balance + $100 on Master Account",
+          "scaling_by_contracts": "Full contracts available from start",
+          "eod_flat_requirement": "Yes, all trades flat by 3:59 PM CST (4:59 PM EST)",
+          "trading_hours": "CME Market Hours: 5:00 PM CST to 3:59 PM CST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX futures",
+          "consistency_rule": "40% consistency rule (best day cannot exceed 40% of total profit for payout)",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Prohibited (flat before weekend)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "inactivity_days": 30,
+          "scaling_plan_details": "Can trade up to 11 Master accounts simultaneously",
+          "prohibited_strategies": "Latency arbitrage, tick scalping bugs",
+          "source_url": "https://bulenox.com/rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - Option 1 (Trailing Drawdown) ($50,000)": {
         "account_size": 50000,
         "currency": "USD",
         "phases": {
           "evaluation": {
             "profit_target_amount": 3000,
-            "trailing_drawdown_amount": 2000,
-            "drawdown_type": "Intraday Trailing",
-            "daily_loss_limit_amount": "None (No DLL on Option 1)",
-            "min_trading_days": 0,
+            "trailing_drawdown_amount": 2500,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 5,
             "max_time_limit": "Unlimited",
-            "contract_limits": "7 minis / 70 micros"
+            "contract_limits": "7 contracts"
           },
           "funded": {
             "profit_target_amount": 0,
-            "trailing_drawdown_amount": 2000,
-            "drawdown_type": "Intraday Trailing",
-            "daily_loss_limit_amount": "None (No DLL on Option 1)",
+            "trailing_drawdown_amount": 2500,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
             "profit_split_starting_pct": 100,
             "profit_split_max_pct": 90,
-            "payout_frequency": "Weekly (processed Wednesdays)",
-            "first_payout_waiting_time": "After 10 qualified trading days",
-            "min_winning_days_for_payout": "10 separate trading days with active profit",
-            "payout_cap_per_withdrawal": "$1,000 to $2,000 per payout for first 3 payouts depending on account size"
+            "payout_frequency": "Twice monthly",
+            "first_payout_waiting_time": "10 trading days",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 1500
           }
         },
         "rules": {
@@ -11925,8 +13110,8 @@ footer {
           "fee_refundable": "No (Subscription-based)",
           "activation_fee": "$148 one-time activation fee or $98/month on Master account",
           "platforms": "NinjaTrader, Rithmic, Tradovate",
-          "contract_limits": "7 minis / 70 micros",
-          "trailing_threshold": "$2,000 Trailing Threshold",
+          "contract_limits": "3 minis / 30 micros",
+          "trailing_threshold": "$1,000 Trailing Threshold",
           "trailing_stop_lock": "Locks at starting balance + $100 on Master Account",
           "scaling_by_contracts": "Full contracts available from start",
           "eod_flat_requirement": "Yes, all trades flat by 3:59 PM CST (4:59 PM EST)",
@@ -11944,30 +13129,81 @@ footer {
           "verification_date": "2026-11-11"
         }
       },
-      "Evaluation - Option 1 (Trailing) ($100,000)": {
+      "Evaluation - Option 2 (EOD Drawdown) ($50,000)": {
+        "account_size": 50000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 3000,
+            "trailing_drawdown_amount": 2500,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 5,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "7 contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 2500,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 100,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Twice monthly",
+            "first_payout_waiting_time": "10 trading days",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 1500
+          }
+        },
+        "rules": {
+          "fee_regular": 175,
+          "fee_discounted": "None",
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$148 one-time activation fee or $98/month on Master account",
+          "platforms": "NinjaTrader, Rithmic, Tradovate",
+          "contract_limits": "3 minis / 30 micros",
+          "trailing_threshold": "$1,000 Trailing Threshold",
+          "trailing_stop_lock": "Locks at starting balance + $100 on Master Account",
+          "scaling_by_contracts": "Full contracts available from start",
+          "eod_flat_requirement": "Yes, all trades flat by 3:59 PM CST (4:59 PM EST)",
+          "trading_hours": "CME Market Hours: 5:00 PM CST to 3:59 PM CST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX futures",
+          "consistency_rule": "40% consistency rule (best day cannot exceed 40% of total profit for payout)",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Prohibited (flat before weekend)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "inactivity_days": 30,
+          "scaling_plan_details": "Can trade up to 11 Master accounts simultaneously",
+          "prohibited_strategies": "Latency arbitrage, tick scalping bugs",
+          "source_url": "https://bulenox.com/rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - Option 1 (Trailing Drawdown) ($100,000)": {
         "account_size": 100000,
         "currency": "USD",
         "phases": {
           "evaluation": {
             "profit_target_amount": 6000,
             "trailing_drawdown_amount": 3000,
-            "drawdown_type": "Intraday Trailing",
-            "daily_loss_limit_amount": "None (No DLL on Option 1)",
-            "min_trading_days": 0,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 5,
             "max_time_limit": "Unlimited",
-            "contract_limits": "12 minis / 120 micros"
+            "contract_limits": "12 contracts"
           },
           "funded": {
             "profit_target_amount": 0,
             "trailing_drawdown_amount": 3000,
-            "drawdown_type": "Intraday Trailing",
-            "daily_loss_limit_amount": "None (No DLL on Option 1)",
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
             "profit_split_starting_pct": 100,
             "profit_split_max_pct": 90,
-            "payout_frequency": "Weekly (processed Wednesdays)",
-            "first_payout_waiting_time": "After 10 qualified trading days",
-            "min_winning_days_for_payout": "10 separate trading days with active profit",
-            "payout_cap_per_withdrawal": "$1,000 to $2,000 per payout for first 3 payouts depending on account size"
+            "payout_frequency": "Twice monthly",
+            "first_payout_waiting_time": "10 trading days",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 1500
           }
         },
         "rules": {
@@ -11976,8 +13212,8 @@ footer {
           "fee_refundable": "No (Subscription-based)",
           "activation_fee": "$148 one-time activation fee or $98/month on Master account",
           "platforms": "NinjaTrader, Rithmic, Tradovate",
-          "contract_limits": "12 minis / 120 micros",
-          "trailing_threshold": "$3,000 Trailing Threshold",
+          "contract_limits": "3 minis / 30 micros",
+          "trailing_threshold": "$1,000 Trailing Threshold",
           "trailing_stop_lock": "Locks at starting balance + $100 on Master Account",
           "scaling_by_contracts": "Full contracts available from start",
           "eod_flat_requirement": "Yes, all trades flat by 3:59 PM CST (4:59 PM EST)",
@@ -11995,30 +13231,81 @@ footer {
           "verification_date": "2026-11-11"
         }
       },
-      "Evaluation - Option 1 (Trailing) ($150,000)": {
+      "Evaluation - Option 2 (EOD Drawdown) ($100,000)": {
+        "account_size": 100000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 6000,
+            "trailing_drawdown_amount": 3000,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 5,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "12 contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 3000,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 100,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Twice monthly",
+            "first_payout_waiting_time": "10 trading days",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 1500
+          }
+        },
+        "rules": {
+          "fee_regular": 215,
+          "fee_discounted": "None",
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$148 one-time activation fee or $98/month on Master account",
+          "platforms": "NinjaTrader, Rithmic, Tradovate",
+          "contract_limits": "3 minis / 30 micros",
+          "trailing_threshold": "$1,000 Trailing Threshold",
+          "trailing_stop_lock": "Locks at starting balance + $100 on Master Account",
+          "scaling_by_contracts": "Full contracts available from start",
+          "eod_flat_requirement": "Yes, all trades flat by 3:59 PM CST (4:59 PM EST)",
+          "trading_hours": "CME Market Hours: 5:00 PM CST to 3:59 PM CST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX futures",
+          "consistency_rule": "40% consistency rule (best day cannot exceed 40% of total profit for payout)",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Prohibited (flat before weekend)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "inactivity_days": 30,
+          "scaling_plan_details": "Can trade up to 11 Master accounts simultaneously",
+          "prohibited_strategies": "Latency arbitrage, tick scalping bugs",
+          "source_url": "https://bulenox.com/rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - Option 1 (Trailing Drawdown) ($150,000)": {
         "account_size": 150000,
         "currency": "USD",
         "phases": {
           "evaluation": {
             "profit_target_amount": 9000,
             "trailing_drawdown_amount": 4500,
-            "drawdown_type": "Intraday Trailing",
-            "daily_loss_limit_amount": "None (No DLL on Option 1)",
-            "min_trading_days": 0,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 5,
             "max_time_limit": "Unlimited",
-            "contract_limits": "15 minis / 150 micros"
+            "contract_limits": "15 contracts"
           },
           "funded": {
             "profit_target_amount": 0,
             "trailing_drawdown_amount": 4500,
-            "drawdown_type": "Intraday Trailing",
-            "daily_loss_limit_amount": "None (No DLL on Option 1)",
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
             "profit_split_starting_pct": 100,
             "profit_split_max_pct": 90,
-            "payout_frequency": "Weekly (processed Wednesdays)",
-            "first_payout_waiting_time": "After 10 qualified trading days",
-            "min_winning_days_for_payout": "10 separate trading days with active profit",
-            "payout_cap_per_withdrawal": "$1,000 to $2,000 per payout for first 3 payouts depending on account size"
+            "payout_frequency": "Twice monthly",
+            "first_payout_waiting_time": "10 trading days",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 1500
           }
         },
         "rules": {
@@ -12027,8 +13314,8 @@ footer {
           "fee_refundable": "No (Subscription-based)",
           "activation_fee": "$148 one-time activation fee or $98/month on Master account",
           "platforms": "NinjaTrader, Rithmic, Tradovate",
-          "contract_limits": "15 minis / 150 micros",
-          "trailing_threshold": "$4,500 Trailing Threshold",
+          "contract_limits": "3 minis / 30 micros",
+          "trailing_threshold": "$1,000 Trailing Threshold",
           "trailing_stop_lock": "Locks at starting balance + $100 on Master Account",
           "scaling_by_contracts": "Full contracts available from start",
           "eod_flat_requirement": "Yes, all trades flat by 3:59 PM CST (4:59 PM EST)",
@@ -12046,30 +13333,81 @@ footer {
           "verification_date": "2026-11-11"
         }
       },
-      "Evaluation - Option 1 (Trailing) ($250,000)": {
+      "Evaluation - Option 2 (EOD Drawdown) ($150,000)": {
+        "account_size": 150000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 9000,
+            "trailing_drawdown_amount": 4500,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 5,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "15 contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 4500,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 100,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Twice monthly",
+            "first_payout_waiting_time": "10 trading days",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 1500
+          }
+        },
+        "rules": {
+          "fee_regular": 325,
+          "fee_discounted": "None",
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$148 one-time activation fee or $98/month on Master account",
+          "platforms": "NinjaTrader, Rithmic, Tradovate",
+          "contract_limits": "3 minis / 30 micros",
+          "trailing_threshold": "$1,000 Trailing Threshold",
+          "trailing_stop_lock": "Locks at starting balance + $100 on Master Account",
+          "scaling_by_contracts": "Full contracts available from start",
+          "eod_flat_requirement": "Yes, all trades flat by 3:59 PM CST (4:59 PM EST)",
+          "trading_hours": "CME Market Hours: 5:00 PM CST to 3:59 PM CST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX futures",
+          "consistency_rule": "40% consistency rule (best day cannot exceed 40% of total profit for payout)",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Prohibited (flat before weekend)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "inactivity_days": 30,
+          "scaling_plan_details": "Can trade up to 11 Master accounts simultaneously",
+          "prohibited_strategies": "Latency arbitrage, tick scalping bugs",
+          "source_url": "https://bulenox.com/rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - Option 1 (Trailing Drawdown) ($250,000)": {
         "account_size": 250000,
         "currency": "USD",
         "phases": {
           "evaluation": {
             "profit_target_amount": 15000,
             "trailing_drawdown_amount": 5500,
-            "drawdown_type": "Intraday Trailing",
-            "daily_loss_limit_amount": "None (No DLL on Option 1)",
-            "min_trading_days": 0,
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 5,
             "max_time_limit": "Unlimited",
-            "contract_limits": "25 minis / 250 micros"
+            "contract_limits": "25 contracts"
           },
           "funded": {
             "profit_target_amount": 0,
             "trailing_drawdown_amount": 5500,
-            "drawdown_type": "Intraday Trailing",
-            "daily_loss_limit_amount": "None (No DLL on Option 1)",
+            "drawdown_type": "Trailing Intraday",
+            "daily_loss_limit_amount": 0,
             "profit_split_starting_pct": 100,
             "profit_split_max_pct": 90,
-            "payout_frequency": "Weekly (processed Wednesdays)",
-            "first_payout_waiting_time": "After 10 qualified trading days",
-            "min_winning_days_for_payout": "10 separate trading days with active profit",
-            "payout_cap_per_withdrawal": "$1,000 to $2,000 per payout for first 3 payouts depending on account size"
+            "payout_frequency": "Twice monthly",
+            "first_payout_waiting_time": "10 trading days",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 1500
           }
         },
         "rules": {
@@ -12078,8 +13416,59 @@ footer {
           "fee_refundable": "No (Subscription-based)",
           "activation_fee": "$148 one-time activation fee or $98/month on Master account",
           "platforms": "NinjaTrader, Rithmic, Tradovate",
-          "contract_limits": "25 minis / 250 micros",
-          "trailing_threshold": "$5,500 Trailing Threshold",
+          "contract_limits": "3 minis / 30 micros",
+          "trailing_threshold": "$1,000 Trailing Threshold",
+          "trailing_stop_lock": "Locks at starting balance + $100 on Master Account",
+          "scaling_by_contracts": "Full contracts available from start",
+          "eod_flat_requirement": "Yes, all trades flat by 3:59 PM CST (4:59 PM EST)",
+          "trading_hours": "CME Market Hours: 5:00 PM CST to 3:59 PM CST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX futures",
+          "consistency_rule": "40% consistency rule (best day cannot exceed 40% of total profit for payout)",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Prohibited (flat before weekend)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "inactivity_days": 30,
+          "scaling_plan_details": "Can trade up to 11 Master accounts simultaneously",
+          "prohibited_strategies": "Latency arbitrage, tick scalping bugs",
+          "source_url": "https://bulenox.com/rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "Evaluation - Option 2 (EOD Drawdown) ($250,000)": {
+        "account_size": 250000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 15000,
+            "trailing_drawdown_amount": 5500,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 5,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "25 contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 5500,
+            "drawdown_type": "End-of-Day Trailing",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 100,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Twice monthly",
+            "first_payout_waiting_time": "10 trading days",
+            "min_winning_days_for_payout": 5,
+            "payout_cap_per_withdrawal": 1500
+          }
+        },
+        "rules": {
+          "fee_regular": 535,
+          "fee_discounted": "None",
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$148 one-time activation fee or $98/month on Master account",
+          "platforms": "NinjaTrader, Rithmic, Tradovate",
+          "contract_limits": "3 minis / 30 micros",
+          "trailing_threshold": "$1,000 Trailing Threshold",
           "trailing_stop_lock": "Locks at starting balance + $100 on Master Account",
           "scaling_by_contracts": "Full contracts available from start",
           "eod_flat_requirement": "Yes, all trades flat by 3:59 PM CST (4:59 PM EST)",
