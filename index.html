@@ -455,7 +455,7 @@ footer {
       <section id="step-plan" class="step-section hidden" aria-labelledby="step-2-heading">
         <div class="step-header">
           <div class="step-num" aria-hidden="true">2</div>
-          <h2 id="step-2-heading" class="step-label">Select Plan Type</h2>
+          <h2 id="step-2-heading" class="step-label">Select Challenge Plan</h2>
         </div>
         <div id="plan-chips" class="chip-row" role="group" aria-label="Plan Types"></div>
       </section>
@@ -869,6 +869,366 @@ footer {
           "consistency_rule": "None during evaluation; abusive demo-exploit prohibited",
           "news_trading_rule": "Allowed in Challenge & Verification; on Standard Funded accounts, restricted from executing orders 2 mins before to 2 mins after high-impact news",
           "weekend_holding_rule": "Allowed in Challenge & Verification; restricted on Standard Funded (must close before weekend); allowed on Swing accounts",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed (commercial and custom EAs permitted)",
+          "copy_trading_rule": "Allowed between own accounts only; copying 3rd party signals prohibited",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed within same account; cross-account hedging prohibited",
+          "martingale_grid_arbitrage_rule": "Latency/arbitrage prohibited; toxic martingale prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None (margin based)",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+25% account balance every 4 months if trader generates 10% net profit and takes at least 2 payouts; upgrades split to 90%",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse trading, account sharing, pass-service abuse",
+          "source_url": "https://ftmo.com/en/trading-objectives/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "2-Step - FTMO Challenge Swing ($10,000)": {
+        "account_size": 10000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 10,
+            "profit_target_amount": 1000,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 500,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 1000,
+            "drawdown_type": "Static",
+            "min_trading_days": 4,
+            "max_time_limit": "Unlimited"
+          },
+          "phase_2": {
+            "profit_target_pct": 5,
+            "profit_target_amount": 500,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 500,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 1000,
+            "drawdown_type": "Static",
+            "min_trading_days": 4,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 500,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 1000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Bi-weekly (every 14 days)",
+            "first_payout_waiting_time": "14 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 165,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "MT4, MT5, cTrader, DXtrade",
+          "leverage": {
+            "forex": "1:30",
+            "gold": "1:15",
+            "indices": "1:15",
+            "crypto": "1:3"
+          },
+          "daily_loss_calculation": "Equity-based (Balance at midnight CE(S)T - 5% of initial capital; floating losses count)",
+          "daily_loss_reset_time": "00:00 CE(S)T (Prague)",
+          "drawdown_trailing_stop_lock": "N/A (Fixed at 90% of initial balance)",
+          "consistency_rule": "None during evaluation; abusive demo-exploit prohibited",
+          "news_trading_rule": "Allowed without restriction (no 2-min window restriction)",
+          "weekend_holding_rule": "Allowed across all evaluation & funded accounts",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed (commercial and custom EAs permitted)",
+          "copy_trading_rule": "Allowed between own accounts only; copying 3rd party signals prohibited",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed within same account; cross-account hedging prohibited",
+          "martingale_grid_arbitrage_rule": "Latency/arbitrage prohibited; toxic martingale prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None (margin based)",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+25% account balance every 4 months if trader generates 10% net profit and takes at least 2 payouts; upgrades split to 90%",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse trading, account sharing, pass-service abuse",
+          "source_url": "https://ftmo.com/en/trading-objectives/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "2-Step - FTMO Challenge Swing ($25,000)": {
+        "account_size": 25000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 10,
+            "profit_target_amount": 2500,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 1250,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 2500,
+            "drawdown_type": "Static",
+            "min_trading_days": 4,
+            "max_time_limit": "Unlimited"
+          },
+          "phase_2": {
+            "profit_target_pct": 5,
+            "profit_target_amount": 1250,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 1250,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 2500,
+            "drawdown_type": "Static",
+            "min_trading_days": 4,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 1250,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 2500,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Bi-weekly (every 14 days)",
+            "first_payout_waiting_time": "14 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 270,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "MT4, MT5, cTrader, DXtrade",
+          "leverage": {
+            "forex": "1:30",
+            "gold": "1:15",
+            "indices": "1:15",
+            "crypto": "1:3"
+          },
+          "daily_loss_calculation": "Equity-based (Balance at midnight CE(S)T - 5% of initial capital; floating losses count)",
+          "daily_loss_reset_time": "00:00 CE(S)T (Prague)",
+          "drawdown_trailing_stop_lock": "N/A (Fixed at 90% of initial balance)",
+          "consistency_rule": "None during evaluation; abusive demo-exploit prohibited",
+          "news_trading_rule": "Allowed without restriction (no 2-min window restriction)",
+          "weekend_holding_rule": "Allowed across all evaluation & funded accounts",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed (commercial and custom EAs permitted)",
+          "copy_trading_rule": "Allowed between own accounts only; copying 3rd party signals prohibited",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed within same account; cross-account hedging prohibited",
+          "martingale_grid_arbitrage_rule": "Latency/arbitrage prohibited; toxic martingale prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None (margin based)",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+25% account balance every 4 months if trader generates 10% net profit and takes at least 2 payouts; upgrades split to 90%",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse trading, account sharing, pass-service abuse",
+          "source_url": "https://ftmo.com/en/trading-objectives/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "2-Step - FTMO Challenge Swing ($50,000)": {
+        "account_size": 50000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 10,
+            "profit_target_amount": 5000,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 2500,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 5000,
+            "drawdown_type": "Static",
+            "min_trading_days": 4,
+            "max_time_limit": "Unlimited"
+          },
+          "phase_2": {
+            "profit_target_pct": 5,
+            "profit_target_amount": 2500,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 2500,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 5000,
+            "drawdown_type": "Static",
+            "min_trading_days": 4,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 2500,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 5000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Bi-weekly (every 14 days)",
+            "first_payout_waiting_time": "14 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 375,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "MT4, MT5, cTrader, DXtrade",
+          "leverage": {
+            "forex": "1:30",
+            "gold": "1:15",
+            "indices": "1:15",
+            "crypto": "1:3"
+          },
+          "daily_loss_calculation": "Equity-based (Balance at midnight CE(S)T - 5% of initial capital; floating losses count)",
+          "daily_loss_reset_time": "00:00 CE(S)T (Prague)",
+          "drawdown_trailing_stop_lock": "N/A (Fixed at 90% of initial balance)",
+          "consistency_rule": "None during evaluation; abusive demo-exploit prohibited",
+          "news_trading_rule": "Allowed without restriction (no 2-min window restriction)",
+          "weekend_holding_rule": "Allowed across all evaluation & funded accounts",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed (commercial and custom EAs permitted)",
+          "copy_trading_rule": "Allowed between own accounts only; copying 3rd party signals prohibited",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed within same account; cross-account hedging prohibited",
+          "martingale_grid_arbitrage_rule": "Latency/arbitrage prohibited; toxic martingale prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None (margin based)",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+25% account balance every 4 months if trader generates 10% net profit and takes at least 2 payouts; upgrades split to 90%",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse trading, account sharing, pass-service abuse",
+          "source_url": "https://ftmo.com/en/trading-objectives/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "2-Step - FTMO Challenge Swing ($100,000)": {
+        "account_size": 100000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 10,
+            "profit_target_amount": 10000,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 5000,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 10000,
+            "drawdown_type": "Static",
+            "min_trading_days": 4,
+            "max_time_limit": "Unlimited"
+          },
+          "phase_2": {
+            "profit_target_pct": 5,
+            "profit_target_amount": 5000,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 5000,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 10000,
+            "drawdown_type": "Static",
+            "min_trading_days": 4,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 5000,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 10000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Bi-weekly (every 14 days)",
+            "first_payout_waiting_time": "14 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 540,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "MT4, MT5, cTrader, DXtrade",
+          "leverage": {
+            "forex": "1:30",
+            "gold": "1:15",
+            "indices": "1:15",
+            "crypto": "1:3"
+          },
+          "daily_loss_calculation": "Equity-based (Balance at midnight CE(S)T - 5% of initial capital; floating losses count)",
+          "daily_loss_reset_time": "00:00 CE(S)T (Prague)",
+          "drawdown_trailing_stop_lock": "N/A (Fixed at 90% of initial balance)",
+          "consistency_rule": "None during evaluation; abusive demo-exploit prohibited",
+          "news_trading_rule": "Allowed without restriction (no 2-min window restriction)",
+          "weekend_holding_rule": "Allowed across all evaluation & funded accounts",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed (commercial and custom EAs permitted)",
+          "copy_trading_rule": "Allowed between own accounts only; copying 3rd party signals prohibited",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed within same account; cross-account hedging prohibited",
+          "martingale_grid_arbitrage_rule": "Latency/arbitrage prohibited; toxic martingale prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None (margin based)",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+25% account balance every 4 months if trader generates 10% net profit and takes at least 2 payouts; upgrades split to 90%",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse trading, account sharing, pass-service abuse",
+          "source_url": "https://ftmo.com/en/trading-objectives/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "2-Step - FTMO Challenge Swing ($200,000)": {
+        "account_size": 200000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 10,
+            "profit_target_amount": 20000,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 10000,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 20000,
+            "drawdown_type": "Static",
+            "min_trading_days": 4,
+            "max_time_limit": "Unlimited"
+          },
+          "phase_2": {
+            "profit_target_pct": 5,
+            "profit_target_amount": 10000,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 10000,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 20000,
+            "drawdown_type": "Static",
+            "min_trading_days": 4,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 10000,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 20000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Bi-weekly (every 14 days)",
+            "first_payout_waiting_time": "14 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 1080,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "MT4, MT5, cTrader, DXtrade",
+          "leverage": {
+            "forex": "1:30",
+            "gold": "1:15",
+            "indices": "1:15",
+            "crypto": "1:3"
+          },
+          "daily_loss_calculation": "Equity-based (Balance at midnight CE(S)T - 5% of initial capital; floating losses count)",
+          "daily_loss_reset_time": "00:00 CE(S)T (Prague)",
+          "drawdown_trailing_stop_lock": "N/A (Fixed at 90% of initial balance)",
+          "consistency_rule": "None during evaluation; abusive demo-exploit prohibited",
+          "news_trading_rule": "Allowed without restriction (no 2-min window restriction)",
+          "weekend_holding_rule": "Allowed across all evaluation & funded accounts",
           "overnight_holding_rule": "Allowed",
           "ea_bots_rule": "Allowed (commercial and custom EAs permitted)",
           "copy_trading_rule": "Allowed between own accounts only; copying 3rd party signals prohibited",
@@ -2228,6 +2588,150 @@ footer {
           "source_url": "https://the5ers.com/hyper-growth/",
           "verification_date": "2026-11-11"
         }
+      },
+      "3-Step - Bootcamp ($100,000)": {
+        "account_size": 100000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 6,
+            "profit_target_amount": 6000,
+            "max_daily_loss_pct": 0,
+            "max_daily_loss_amount": 0,
+            "max_overall_drawdown_pct": 5,
+            "max_overall_drawdown_amount": 5000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "12 months"
+          },
+          "phase_2": {
+            "profit_target_pct": 6,
+            "profit_target_amount": 6000,
+            "max_daily_loss_pct": 0,
+            "max_daily_loss_amount": 0,
+            "max_overall_drawdown_pct": 5,
+            "max_overall_drawdown_amount": 5000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "12 months"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 0,
+            "max_daily_loss_amount": 0,
+            "max_overall_drawdown_pct": 5,
+            "max_overall_drawdown_amount": 5000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 100,
+            "payout_frequency": "Bi-weekly (every 14 days)",
+            "first_payout_waiting_time": "14 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 95,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "MT5, cTrader, TradingView",
+          "leverage": {
+            "forex": "1:100",
+            "gold": "1:33",
+            "indices": "1:33",
+            "crypto": "1:5"
+          },
+          "daily_loss_calculation": "Calculated from higher of balance or equity at midnight MT5 server time",
+          "daily_loss_reset_time": "00:00 MT5 Server Time",
+          "drawdown_trailing_stop_lock": "N/A (Fixed 10% floor based on initial capital)",
+          "consistency_rule": "None",
+          "news_trading_rule": "Allowed in evaluation; prohibited from opening/closing 2 mins before to 2 mins after high impact news in funded phase (holding through allowed)",
+          "weekend_holding_rule": "Allowed",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed",
+          "martingale_grid_arbitrage_rule": "Arbitrage and latency prohibited; pure martingale prohibited",
+          "stop_loss_mandatory": "No (Mandatory only on Bootcamp & Hyper Growth)",
+          "max_lot_size_risk_limit": "None",
+          "inactivity_days": 30,
+          "scaling_plan_details": "Scales balance by 100% (doubles) upon achieving 10% profit in funded stage, up to $500,000 and 100% split + monthly salary",
+          "prohibited_strategies": "Latency arbitrage, high-frequency tick trading, account sharing",
+          "source_url": "https://the5ers.com/high-stakes/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "3-Step - Bootcamp ($250,000)": {
+        "account_size": 250000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 6,
+            "profit_target_amount": 15000,
+            "max_daily_loss_pct": 0,
+            "max_daily_loss_amount": 0,
+            "max_overall_drawdown_pct": 5,
+            "max_overall_drawdown_amount": 12500,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "12 months"
+          },
+          "phase_2": {
+            "profit_target_pct": 6,
+            "profit_target_amount": 15000,
+            "max_daily_loss_pct": 0,
+            "max_daily_loss_amount": 0,
+            "max_overall_drawdown_pct": 5,
+            "max_overall_drawdown_amount": 12500,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "12 months"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 0,
+            "max_daily_loss_amount": 0,
+            "max_overall_drawdown_pct": 5,
+            "max_overall_drawdown_amount": 12500,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 100,
+            "payout_frequency": "Bi-weekly (every 14 days)",
+            "first_payout_waiting_time": "14 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 225,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "MT5, cTrader, TradingView",
+          "leverage": {
+            "forex": "1:100",
+            "gold": "1:33",
+            "indices": "1:33",
+            "crypto": "1:5"
+          },
+          "daily_loss_calculation": "Calculated from higher of balance or equity at midnight MT5 server time",
+          "daily_loss_reset_time": "00:00 MT5 Server Time",
+          "drawdown_trailing_stop_lock": "N/A (Fixed 10% floor based on initial capital)",
+          "consistency_rule": "None",
+          "news_trading_rule": "Allowed in evaluation; prohibited from opening/closing 2 mins before to 2 mins after high impact news in funded phase (holding through allowed)",
+          "weekend_holding_rule": "Allowed",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed",
+          "martingale_grid_arbitrage_rule": "Arbitrage and latency prohibited; pure martingale prohibited",
+          "stop_loss_mandatory": "No (Mandatory only on Bootcamp & Hyper Growth)",
+          "max_lot_size_risk_limit": "None",
+          "inactivity_days": 30,
+          "scaling_plan_details": "Scales balance by 100% (doubles) upon achieving 10% profit in funded stage, up to $500,000 and 100% split + monthly salary",
+          "prohibited_strategies": "Latency arbitrage, high-frequency tick trading, account sharing",
+          "source_url": "https://the5ers.com/high-stakes/",
+          "verification_date": "2026-11-11"
+        }
       }
     },
     "FundingPips": {
@@ -2576,6 +3080,671 @@ footer {
           "consistency_rule": "No single day can exceed 30% of total profit at payout request",
           "news_trading_rule": "Allowed in evaluation; on master funded accounts, trades executed within 2 mins of high impact news are subject to deduction",
           "weekend_holding_rule": "Allowed",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed",
+          "martingale_grid_arbitrage_rule": "Arbitrage and latency prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+20% balance increase every 4 months upon achieving 10% total profit, up to $2,000,000",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse arbitrage, account sharing",
+          "source_url": "https://fundingpips.com/trading-rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "1-Step - 1-Step Evaluation ($5,000)": {
+        "account_size": 5000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 12,
+            "profit_target_amount": 600,
+            "max_daily_loss_pct": 3,
+            "max_daily_loss_amount": 150,
+            "max_overall_drawdown_pct": 6,
+            "max_overall_drawdown_amount": 300,
+            "drawdown_type": "Trailing EOD",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 3,
+            "max_daily_loss_amount": 150,
+            "max_overall_drawdown_pct": 6,
+            "max_overall_drawdown_amount": 300,
+            "drawdown_type": "Trailing EOD",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Weekly (every 7 days)",
+            "first_payout_waiting_time": "7 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 35,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "Match-Trader, cTrader, MT5",
+          "leverage": {
+            "forex": "1:100",
+            "gold": "1:30",
+            "indices": "1:20",
+            "crypto": "1:2"
+          },
+          "daily_loss_calculation": "Equity-based (5% of start of day equity or balance, whichever is higher)",
+          "daily_loss_reset_time": "00:00 Server Time (UTC+2)",
+          "drawdown_trailing_stop_lock": "N/A (Fixed 10% floor based on initial capital)",
+          "consistency_rule": "No single day can exceed 30% of total profit at payout request",
+          "news_trading_rule": "Allowed in evaluation; on master funded accounts, trades executed within 2 mins of high impact news are subject to deduction",
+          "weekend_holding_rule": "Allowed",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed",
+          "martingale_grid_arbitrage_rule": "Arbitrage and latency prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+20% balance increase every 4 months upon achieving 10% total profit, up to $2,000,000",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse arbitrage, account sharing",
+          "source_url": "https://fundingpips.com/trading-rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "2-Step - Flex Challenge ($5,000)": {
+        "account_size": 5000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 8,
+            "profit_target_amount": 400,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 250,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 500,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "phase_2": {
+            "profit_target_pct": 5,
+            "profit_target_amount": 250,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 250,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 500,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 250,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 500,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 85,
+            "profit_split_max_pct": 95,
+            "payout_frequency": "Weekly (every 7 days)",
+            "first_payout_waiting_time": "7 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 37,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "Match-Trader, cTrader, MT5",
+          "leverage": {
+            "forex": "1:100",
+            "gold": "1:30",
+            "indices": "1:20",
+            "crypto": "1:2"
+          },
+          "daily_loss_calculation": "Equity-based (5% of start of day equity or balance, whichever is higher)",
+          "daily_loss_reset_time": "00:00 Server Time (UTC+2)",
+          "drawdown_trailing_stop_lock": "N/A (Fixed 10% floor based on initial capital)",
+          "consistency_rule": "No single day can exceed 30% of total profit at payout request",
+          "news_trading_rule": "Allowed without restriction",
+          "weekend_holding_rule": "Allowed on evaluation & funded",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed",
+          "martingale_grid_arbitrage_rule": "Arbitrage and latency prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+20% balance increase every 4 months upon achieving 10% total profit, up to $2,000,000",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse arbitrage, account sharing",
+          "source_url": "https://fundingpips.com/trading-rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "1-Step - 1-Step Evaluation ($10,000)": {
+        "account_size": 10000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 12,
+            "profit_target_amount": 1200,
+            "max_daily_loss_pct": 3,
+            "max_daily_loss_amount": 300,
+            "max_overall_drawdown_pct": 6,
+            "max_overall_drawdown_amount": 600,
+            "drawdown_type": "Trailing EOD",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 3,
+            "max_daily_loss_amount": 300,
+            "max_overall_drawdown_pct": 6,
+            "max_overall_drawdown_amount": 600,
+            "drawdown_type": "Trailing EOD",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Weekly (every 7 days)",
+            "first_payout_waiting_time": "7 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 65,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "Match-Trader, cTrader, MT5",
+          "leverage": {
+            "forex": "1:100",
+            "gold": "1:30",
+            "indices": "1:20",
+            "crypto": "1:2"
+          },
+          "daily_loss_calculation": "Equity-based (5% of start of day equity or balance, whichever is higher)",
+          "daily_loss_reset_time": "00:00 Server Time (UTC+2)",
+          "drawdown_trailing_stop_lock": "N/A (Fixed 10% floor based on initial capital)",
+          "consistency_rule": "No single day can exceed 30% of total profit at payout request",
+          "news_trading_rule": "Allowed in evaluation; on master funded accounts, trades executed within 2 mins of high impact news are subject to deduction",
+          "weekend_holding_rule": "Allowed",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed",
+          "martingale_grid_arbitrage_rule": "Arbitrage and latency prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+20% balance increase every 4 months upon achieving 10% total profit, up to $2,000,000",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse arbitrage, account sharing",
+          "source_url": "https://fundingpips.com/trading-rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "2-Step - Flex Challenge ($10,000)": {
+        "account_size": 10000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 8,
+            "profit_target_amount": 800,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 500,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 1000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "phase_2": {
+            "profit_target_pct": 5,
+            "profit_target_amount": 500,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 500,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 1000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 500,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 1000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 85,
+            "profit_split_max_pct": 95,
+            "payout_frequency": "Weekly (every 7 days)",
+            "first_payout_waiting_time": "7 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 69,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "Match-Trader, cTrader, MT5",
+          "leverage": {
+            "forex": "1:100",
+            "gold": "1:30",
+            "indices": "1:20",
+            "crypto": "1:2"
+          },
+          "daily_loss_calculation": "Equity-based (5% of start of day equity or balance, whichever is higher)",
+          "daily_loss_reset_time": "00:00 Server Time (UTC+2)",
+          "drawdown_trailing_stop_lock": "N/A (Fixed 10% floor based on initial capital)",
+          "consistency_rule": "No single day can exceed 30% of total profit at payout request",
+          "news_trading_rule": "Allowed without restriction",
+          "weekend_holding_rule": "Allowed on evaluation & funded",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed",
+          "martingale_grid_arbitrage_rule": "Arbitrage and latency prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+20% balance increase every 4 months upon achieving 10% total profit, up to $2,000,000",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse arbitrage, account sharing",
+          "source_url": "https://fundingpips.com/trading-rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "1-Step - 1-Step Evaluation ($25,000)": {
+        "account_size": 25000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 12,
+            "profit_target_amount": 3000,
+            "max_daily_loss_pct": 3,
+            "max_daily_loss_amount": 750,
+            "max_overall_drawdown_pct": 6,
+            "max_overall_drawdown_amount": 1500,
+            "drawdown_type": "Trailing EOD",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 3,
+            "max_daily_loss_amount": 750,
+            "max_overall_drawdown_pct": 6,
+            "max_overall_drawdown_amount": 1500,
+            "drawdown_type": "Trailing EOD",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Weekly (every 7 days)",
+            "first_payout_waiting_time": "7 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 150,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "Match-Trader, cTrader, MT5",
+          "leverage": {
+            "forex": "1:100",
+            "gold": "1:30",
+            "indices": "1:20",
+            "crypto": "1:2"
+          },
+          "daily_loss_calculation": "Equity-based (5% of start of day equity or balance, whichever is higher)",
+          "daily_loss_reset_time": "00:00 Server Time (UTC+2)",
+          "drawdown_trailing_stop_lock": "N/A (Fixed 10% floor based on initial capital)",
+          "consistency_rule": "No single day can exceed 30% of total profit at payout request",
+          "news_trading_rule": "Allowed in evaluation; on master funded accounts, trades executed within 2 mins of high impact news are subject to deduction",
+          "weekend_holding_rule": "Allowed",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed",
+          "martingale_grid_arbitrage_rule": "Arbitrage and latency prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+20% balance increase every 4 months upon achieving 10% total profit, up to $2,000,000",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse arbitrage, account sharing",
+          "source_url": "https://fundingpips.com/trading-rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "2-Step - Flex Challenge ($25,000)": {
+        "account_size": 25000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 8,
+            "profit_target_amount": 2000,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 1250,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 2500,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "phase_2": {
+            "profit_target_pct": 5,
+            "profit_target_amount": 1250,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 1250,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 2500,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 1250,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 2500,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 85,
+            "profit_split_max_pct": 95,
+            "payout_frequency": "Weekly (every 7 days)",
+            "first_payout_waiting_time": "7 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 160,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "Match-Trader, cTrader, MT5",
+          "leverage": {
+            "forex": "1:100",
+            "gold": "1:30",
+            "indices": "1:20",
+            "crypto": "1:2"
+          },
+          "daily_loss_calculation": "Equity-based (5% of start of day equity or balance, whichever is higher)",
+          "daily_loss_reset_time": "00:00 Server Time (UTC+2)",
+          "drawdown_trailing_stop_lock": "N/A (Fixed 10% floor based on initial capital)",
+          "consistency_rule": "No single day can exceed 30% of total profit at payout request",
+          "news_trading_rule": "Allowed without restriction",
+          "weekend_holding_rule": "Allowed on evaluation & funded",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed",
+          "martingale_grid_arbitrage_rule": "Arbitrage and latency prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+20% balance increase every 4 months upon achieving 10% total profit, up to $2,000,000",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse arbitrage, account sharing",
+          "source_url": "https://fundingpips.com/trading-rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "1-Step - 1-Step Evaluation ($50,000)": {
+        "account_size": 50000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 12,
+            "profit_target_amount": 6000,
+            "max_daily_loss_pct": 3,
+            "max_daily_loss_amount": 1500,
+            "max_overall_drawdown_pct": 6,
+            "max_overall_drawdown_amount": 3000,
+            "drawdown_type": "Trailing EOD",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 3,
+            "max_daily_loss_amount": 1500,
+            "max_overall_drawdown_pct": 6,
+            "max_overall_drawdown_amount": 3000,
+            "drawdown_type": "Trailing EOD",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Weekly (every 7 days)",
+            "first_payout_waiting_time": "7 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 258,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "Match-Trader, cTrader, MT5",
+          "leverage": {
+            "forex": "1:100",
+            "gold": "1:30",
+            "indices": "1:20",
+            "crypto": "1:2"
+          },
+          "daily_loss_calculation": "Equity-based (5% of start of day equity or balance, whichever is higher)",
+          "daily_loss_reset_time": "00:00 Server Time (UTC+2)",
+          "drawdown_trailing_stop_lock": "N/A (Fixed 10% floor based on initial capital)",
+          "consistency_rule": "No single day can exceed 30% of total profit at payout request",
+          "news_trading_rule": "Allowed in evaluation; on master funded accounts, trades executed within 2 mins of high impact news are subject to deduction",
+          "weekend_holding_rule": "Allowed",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed",
+          "martingale_grid_arbitrage_rule": "Arbitrage and latency prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+20% balance increase every 4 months upon achieving 10% total profit, up to $2,000,000",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse arbitrage, account sharing",
+          "source_url": "https://fundingpips.com/trading-rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "2-Step - Flex Challenge ($50,000)": {
+        "account_size": 50000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 8,
+            "profit_target_amount": 4000,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 2500,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 5000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "phase_2": {
+            "profit_target_pct": 5,
+            "profit_target_amount": 2500,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 2500,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 5000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 2500,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 5000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 85,
+            "profit_split_max_pct": 95,
+            "payout_frequency": "Weekly (every 7 days)",
+            "first_payout_waiting_time": "7 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 275,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "Match-Trader, cTrader, MT5",
+          "leverage": {
+            "forex": "1:100",
+            "gold": "1:30",
+            "indices": "1:20",
+            "crypto": "1:2"
+          },
+          "daily_loss_calculation": "Equity-based (5% of start of day equity or balance, whichever is higher)",
+          "daily_loss_reset_time": "00:00 Server Time (UTC+2)",
+          "drawdown_trailing_stop_lock": "N/A (Fixed 10% floor based on initial capital)",
+          "consistency_rule": "No single day can exceed 30% of total profit at payout request",
+          "news_trading_rule": "Allowed without restriction",
+          "weekend_holding_rule": "Allowed on evaluation & funded",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed",
+          "martingale_grid_arbitrage_rule": "Arbitrage and latency prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+20% balance increase every 4 months upon achieving 10% total profit, up to $2,000,000",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse arbitrage, account sharing",
+          "source_url": "https://fundingpips.com/trading-rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "1-Step - 1-Step Evaluation ($100,000)": {
+        "account_size": 100000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 12,
+            "profit_target_amount": 12000,
+            "max_daily_loss_pct": 3,
+            "max_daily_loss_amount": 3000,
+            "max_overall_drawdown_pct": 6,
+            "max_overall_drawdown_amount": 6000,
+            "drawdown_type": "Trailing EOD",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 3,
+            "max_daily_loss_amount": 3000,
+            "max_overall_drawdown_pct": 6,
+            "max_overall_drawdown_amount": 6000,
+            "drawdown_type": "Trailing EOD",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Weekly (every 7 days)",
+            "first_payout_waiting_time": "7 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 431,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "Match-Trader, cTrader, MT5",
+          "leverage": {
+            "forex": "1:100",
+            "gold": "1:30",
+            "indices": "1:20",
+            "crypto": "1:2"
+          },
+          "daily_loss_calculation": "Equity-based (5% of start of day equity or balance, whichever is higher)",
+          "daily_loss_reset_time": "00:00 Server Time (UTC+2)",
+          "drawdown_trailing_stop_lock": "N/A (Fixed 10% floor based on initial capital)",
+          "consistency_rule": "No single day can exceed 30% of total profit at payout request",
+          "news_trading_rule": "Allowed in evaluation; on master funded accounts, trades executed within 2 mins of high impact news are subject to deduction",
+          "weekend_holding_rule": "Allowed",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed",
+          "martingale_grid_arbitrage_rule": "Arbitrage and latency prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+20% balance increase every 4 months upon achieving 10% total profit, up to $2,000,000",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse arbitrage, account sharing",
+          "source_url": "https://fundingpips.com/trading-rules/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "2-Step - Flex Challenge ($100,000)": {
+        "account_size": 100000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 8,
+            "profit_target_amount": 8000,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 5000,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 10000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "phase_2": {
+            "profit_target_pct": 5,
+            "profit_target_amount": 5000,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 5000,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 10000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 5,
+            "max_daily_loss_amount": 5000,
+            "max_overall_drawdown_pct": 10,
+            "max_overall_drawdown_amount": 10000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 85,
+            "profit_split_max_pct": 95,
+            "payout_frequency": "Weekly (every 7 days)",
+            "first_payout_waiting_time": "7 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 459,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "Match-Trader, cTrader, MT5",
+          "leverage": {
+            "forex": "1:100",
+            "gold": "1:30",
+            "indices": "1:20",
+            "crypto": "1:2"
+          },
+          "daily_loss_calculation": "Equity-based (5% of start of day equity or balance, whichever is higher)",
+          "daily_loss_reset_time": "00:00 Server Time (UTC+2)",
+          "drawdown_trailing_stop_lock": "N/A (Fixed 10% floor based on initial capital)",
+          "consistency_rule": "No single day can exceed 30% of total profit at payout request",
+          "news_trading_rule": "Allowed without restriction",
+          "weekend_holding_rule": "Allowed on evaluation & funded",
           "overnight_holding_rule": "Allowed",
           "ea_bots_rule": "Allowed",
           "copy_trading_rule": "Allowed between own accounts",
@@ -4328,6 +5497,671 @@ footer {
           "daily_loss_calculation": "Calculated based on starting balance/equity of the day",
           "daily_loss_reset_time": "00:00 Server Time",
           "drawdown_trailing_stop_lock": "N/A (Fixed 8% static floor)",
+          "consistency_rule": "None",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Allowed",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed",
+          "martingale_grid_arbitrage_rule": "Arbitrage and latency prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+25% capital increase every 3 months if trader achieves 8% net profit",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse trading",
+          "source_url": "https://goatfundedtrader.com/faq/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "2-Step - GOAT Challenge ($5,000)": {
+        "account_size": 5000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 8,
+            "profit_target_amount": 400,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 200,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 400,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "phase_2": {
+            "profit_target_pct": 5,
+            "profit_target_amount": 250,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 200,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 400,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 200,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 400,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 95,
+            "payout_frequency": "Bi-weekly (every 14 days)",
+            "first_payout_waiting_time": "14 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 32,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "MT4, MT5, TradeLocker, cTrader",
+          "leverage": {
+            "forex": "1:100",
+            "gold": "1:30",
+            "indices": "1:20",
+            "crypto": "1:2"
+          },
+          "daily_loss_calculation": "Calculated based on starting balance/equity of the day",
+          "daily_loss_reset_time": "00:00 Server Time",
+          "drawdown_trailing_stop_lock": "N/A (Fixed 8% static floor)",
+          "consistency_rule": "None",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Allowed",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed",
+          "martingale_grid_arbitrage_rule": "Arbitrage and latency prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+25% capital increase every 3 months if trader achieves 8% net profit",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse trading",
+          "source_url": "https://goatfundedtrader.com/faq/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "1-Step - HERO Challenge ($5,000)": {
+        "account_size": 5000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 10,
+            "profit_target_amount": 500,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 200,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 400,
+            "drawdown_type": "Trailing Equity-based",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 200,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 400,
+            "drawdown_type": "Trailing Equity-based",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Bi-weekly (every 14 days)",
+            "first_payout_waiting_time": "14 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 38,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "MT4, MT5, TradeLocker, cTrader",
+          "leverage": {
+            "forex": "1:100",
+            "gold": "1:30",
+            "indices": "1:20",
+            "crypto": "1:2"
+          },
+          "daily_loss_calculation": "Calculated based on starting balance/equity of the day",
+          "daily_loss_reset_time": "00:00 Server Time",
+          "drawdown_trailing_stop_lock": "Trailing drawdown locks at starting balance once account reaches starting balance + drawdown limit",
+          "consistency_rule": "None",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Allowed",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed",
+          "martingale_grid_arbitrage_rule": "Arbitrage and latency prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+25% capital increase every 3 months if trader achieves 8% net profit",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse trading",
+          "source_url": "https://goatfundedtrader.com/faq/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "2-Step - GOAT Challenge ($10,000)": {
+        "account_size": 10000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 8,
+            "profit_target_amount": 800,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 400,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 800,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "phase_2": {
+            "profit_target_pct": 5,
+            "profit_target_amount": 500,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 400,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 800,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 400,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 800,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 95,
+            "payout_frequency": "Bi-weekly (every 14 days)",
+            "first_payout_waiting_time": "14 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 60,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "MT4, MT5, TradeLocker, cTrader",
+          "leverage": {
+            "forex": "1:100",
+            "gold": "1:30",
+            "indices": "1:20",
+            "crypto": "1:2"
+          },
+          "daily_loss_calculation": "Calculated based on starting balance/equity of the day",
+          "daily_loss_reset_time": "00:00 Server Time",
+          "drawdown_trailing_stop_lock": "N/A (Fixed 8% static floor)",
+          "consistency_rule": "None",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Allowed",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed",
+          "martingale_grid_arbitrage_rule": "Arbitrage and latency prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+25% capital increase every 3 months if trader achieves 8% net profit",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse trading",
+          "source_url": "https://goatfundedtrader.com/faq/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "1-Step - HERO Challenge ($10,000)": {
+        "account_size": 10000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 10,
+            "profit_target_amount": 1000,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 400,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 800,
+            "drawdown_type": "Trailing Equity-based",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 400,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 800,
+            "drawdown_type": "Trailing Equity-based",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Bi-weekly (every 14 days)",
+            "first_payout_waiting_time": "14 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 72,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "MT4, MT5, TradeLocker, cTrader",
+          "leverage": {
+            "forex": "1:100",
+            "gold": "1:30",
+            "indices": "1:20",
+            "crypto": "1:2"
+          },
+          "daily_loss_calculation": "Calculated based on starting balance/equity of the day",
+          "daily_loss_reset_time": "00:00 Server Time",
+          "drawdown_trailing_stop_lock": "Trailing drawdown locks at starting balance once account reaches starting balance + drawdown limit",
+          "consistency_rule": "None",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Allowed",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed",
+          "martingale_grid_arbitrage_rule": "Arbitrage and latency prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+25% capital increase every 3 months if trader achieves 8% net profit",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse trading",
+          "source_url": "https://goatfundedtrader.com/faq/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "2-Step - GOAT Challenge ($25,000)": {
+        "account_size": 25000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 8,
+            "profit_target_amount": 2000,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 1000,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 2000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "phase_2": {
+            "profit_target_pct": 5,
+            "profit_target_amount": 1250,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 1000,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 2000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 1000,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 2000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 95,
+            "payout_frequency": "Bi-weekly (every 14 days)",
+            "first_payout_waiting_time": "14 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 135,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "MT4, MT5, TradeLocker, cTrader",
+          "leverage": {
+            "forex": "1:100",
+            "gold": "1:30",
+            "indices": "1:20",
+            "crypto": "1:2"
+          },
+          "daily_loss_calculation": "Calculated based on starting balance/equity of the day",
+          "daily_loss_reset_time": "00:00 Server Time",
+          "drawdown_trailing_stop_lock": "N/A (Fixed 8% static floor)",
+          "consistency_rule": "None",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Allowed",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed",
+          "martingale_grid_arbitrage_rule": "Arbitrage and latency prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+25% capital increase every 3 months if trader achieves 8% net profit",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse trading",
+          "source_url": "https://goatfundedtrader.com/faq/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "1-Step - HERO Challenge ($25,000)": {
+        "account_size": 25000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 10,
+            "profit_target_amount": 2500,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 1000,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 2000,
+            "drawdown_type": "Trailing Equity-based",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 1000,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 2000,
+            "drawdown_type": "Trailing Equity-based",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Bi-weekly (every 14 days)",
+            "first_payout_waiting_time": "14 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 162,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "MT4, MT5, TradeLocker, cTrader",
+          "leverage": {
+            "forex": "1:100",
+            "gold": "1:30",
+            "indices": "1:20",
+            "crypto": "1:2"
+          },
+          "daily_loss_calculation": "Calculated based on starting balance/equity of the day",
+          "daily_loss_reset_time": "00:00 Server Time",
+          "drawdown_trailing_stop_lock": "Trailing drawdown locks at starting balance once account reaches starting balance + drawdown limit",
+          "consistency_rule": "None",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Allowed",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed",
+          "martingale_grid_arbitrage_rule": "Arbitrage and latency prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+25% capital increase every 3 months if trader achieves 8% net profit",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse trading",
+          "source_url": "https://goatfundedtrader.com/faq/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "2-Step - GOAT Challenge ($50,000)": {
+        "account_size": 50000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 8,
+            "profit_target_amount": 4000,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 2000,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 4000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "phase_2": {
+            "profit_target_pct": 5,
+            "profit_target_amount": 2500,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 2000,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 4000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 2000,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 4000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 95,
+            "payout_frequency": "Bi-weekly (every 14 days)",
+            "first_payout_waiting_time": "14 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 245,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "MT4, MT5, TradeLocker, cTrader",
+          "leverage": {
+            "forex": "1:100",
+            "gold": "1:30",
+            "indices": "1:20",
+            "crypto": "1:2"
+          },
+          "daily_loss_calculation": "Calculated based on starting balance/equity of the day",
+          "daily_loss_reset_time": "00:00 Server Time",
+          "drawdown_trailing_stop_lock": "N/A (Fixed 8% static floor)",
+          "consistency_rule": "None",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Allowed",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed",
+          "martingale_grid_arbitrage_rule": "Arbitrage and latency prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+25% capital increase every 3 months if trader achieves 8% net profit",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse trading",
+          "source_url": "https://goatfundedtrader.com/faq/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "1-Step - HERO Challenge ($50,000)": {
+        "account_size": 50000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 10,
+            "profit_target_amount": 5000,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 2000,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 4000,
+            "drawdown_type": "Trailing Equity-based",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 2000,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 4000,
+            "drawdown_type": "Trailing Equity-based",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Bi-weekly (every 14 days)",
+            "first_payout_waiting_time": "14 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 294,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "MT4, MT5, TradeLocker, cTrader",
+          "leverage": {
+            "forex": "1:100",
+            "gold": "1:30",
+            "indices": "1:20",
+            "crypto": "1:2"
+          },
+          "daily_loss_calculation": "Calculated based on starting balance/equity of the day",
+          "daily_loss_reset_time": "00:00 Server Time",
+          "drawdown_trailing_stop_lock": "Trailing drawdown locks at starting balance once account reaches starting balance + drawdown limit",
+          "consistency_rule": "None",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Allowed",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed",
+          "martingale_grid_arbitrage_rule": "Arbitrage and latency prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+25% capital increase every 3 months if trader achieves 8% net profit",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse trading",
+          "source_url": "https://goatfundedtrader.com/faq/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "2-Step - GOAT Challenge ($100,000)": {
+        "account_size": 100000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 8,
+            "profit_target_amount": 8000,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 4000,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 8000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "phase_2": {
+            "profit_target_pct": 5,
+            "profit_target_amount": 5000,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 4000,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 8000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 4000,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 8000,
+            "drawdown_type": "Static",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 95,
+            "payout_frequency": "Bi-weekly (every 14 days)",
+            "first_payout_waiting_time": "14 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 430,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "MT4, MT5, TradeLocker, cTrader",
+          "leverage": {
+            "forex": "1:100",
+            "gold": "1:30",
+            "indices": "1:20",
+            "crypto": "1:2"
+          },
+          "daily_loss_calculation": "Calculated based on starting balance/equity of the day",
+          "daily_loss_reset_time": "00:00 Server Time",
+          "drawdown_trailing_stop_lock": "N/A (Fixed 8% static floor)",
+          "consistency_rule": "None",
+          "news_trading_rule": "Allowed",
+          "weekend_holding_rule": "Allowed",
+          "overnight_holding_rule": "Allowed",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed between own accounts",
+          "hft_rule": "Prohibited",
+          "hedging_rule": "Allowed",
+          "martingale_grid_arbitrage_rule": "Arbitrage and latency prohibited",
+          "stop_loss_mandatory": "No",
+          "max_lot_size_risk_limit": "None",
+          "inactivity_days": 30,
+          "scaling_plan_details": "+25% capital increase every 3 months if trader achieves 8% net profit",
+          "prohibited_strategies": "Latency arbitrage, tick scalping, reverse trading",
+          "source_url": "https://goatfundedtrader.com/faq/",
+          "verification_date": "2026-11-11"
+        }
+      },
+      "1-Step - HERO Challenge ($100,000)": {
+        "account_size": 100000,
+        "currency": "USD",
+        "phases": {
+          "phase_1": {
+            "profit_target_pct": 10,
+            "profit_target_amount": 10000,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 4000,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 8000,
+            "drawdown_type": "Trailing Equity-based",
+            "min_trading_days": 0,
+            "max_time_limit": "Unlimited"
+          },
+          "funded": {
+            "profit_target_pct": 0,
+            "max_daily_loss_pct": 4,
+            "max_daily_loss_amount": 4000,
+            "max_overall_drawdown_pct": 8,
+            "max_overall_drawdown_amount": 8000,
+            "drawdown_type": "Trailing Equity-based",
+            "min_trading_days": 0,
+            "profit_split_starting_pct": 80,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Bi-weekly (every 14 days)",
+            "first_payout_waiting_time": "14 days"
+          }
+        },
+        "rules": {
+          "fee_regular": 516,
+          "fee_discounted": "None",
+          "fee_refundable": "Yes, with 1st payout",
+          "platforms": "MT4, MT5, TradeLocker, cTrader",
+          "leverage": {
+            "forex": "1:100",
+            "gold": "1:30",
+            "indices": "1:20",
+            "crypto": "1:2"
+          },
+          "daily_loss_calculation": "Calculated based on starting balance/equity of the day",
+          "daily_loss_reset_time": "00:00 Server Time",
+          "drawdown_trailing_stop_lock": "Trailing drawdown locks at starting balance once account reaches starting balance + drawdown limit",
           "consistency_rule": "None",
           "news_trading_rule": "Allowed",
           "weekend_holding_rule": "Allowed",
@@ -9028,6 +10862,57 @@ footer {
           "source_url": "https://apextraderfunding.com/faq/",
           "verification_date": "2026-11-11"
         }
+      },
+      "Evaluation - Static Drawdown Plan ($100,000)": {
+        "account_size": 100000,
+        "currency": "USD",
+        "phases": {
+          "evaluation": {
+            "profit_target_amount": 2000,
+            "trailing_drawdown_amount": 625,
+            "drawdown_type": "Static (Non-Trailing)",
+            "daily_loss_limit_amount": 0,
+            "min_trading_days": 7,
+            "max_time_limit": "Unlimited",
+            "contract_limits": "2 Contracts"
+          },
+          "funded": {
+            "profit_target_amount": 0,
+            "trailing_drawdown_amount": 625,
+            "drawdown_type": "Static (Non-Trailing)",
+            "daily_loss_limit_amount": 0,
+            "profit_split_starting_pct": 100,
+            "profit_split_max_pct": 90,
+            "payout_frequency": "Twice monthly",
+            "first_payout_waiting_time": "10 active trading days",
+            "min_winning_days_for_payout": 10,
+            "payout_cap_per_withdrawal": 2000
+          }
+        },
+        "rules": {
+          "fee_regular": 137,
+          "fee_discounted": 131.4,
+          "fee_refundable": "No (Subscription-based)",
+          "activation_fee": "$149 one-time or $85/month on funded PA",
+          "platforms": "NinjaTrader, Tradovate, Rithmic, TradingView",
+          "contract_limits": "2 contracts max",
+          "trailing_threshold": "$625 Static Max Loss (Never trails up, stays static)",
+          "trailing_stop_lock": "Fixed permanently at $99,375",
+          "scaling_by_contracts": "Contract scaling permitted up to max limit; full contracts available from start",
+          "eod_flat_requirement": "Yes, flat daily by 4:59 PM EST (market close)",
+          "trading_hours": "CME Market Hours: 6:00 PM EST to 4:59 PM EST next day",
+          "allowed_products": "CME, CBOT, NYMEX, COMEX equity and commodity futures",
+          "consistency_rule": "30% rule on PA payouts (no single day can exceed 30% of total profit)",
+          "news_trading_rule": "Allowed during all phases",
+          "weekend_holding_rule": "Prohibited (all positions flat by 4:59 PM EST Friday)",
+          "ea_bots_rule": "Allowed",
+          "copy_trading_rule": "Allowed (trade copier allowed up to 20 accounts)",
+          "inactivity_days": 30,
+          "scaling_plan_details": "Can trade up to 20 simultaneous funded accounts",
+          "prohibited_strategies": "Macro news scalping with extreme slippage abuse, exploiting demo feed glitches",
+          "source_url": "https://apextraderfunding.com/faq/",
+          "verification_date": "2026-11-11"
+        }
       }
     },
     "Topstep": {
@@ -11971,7 +13856,8 @@ footer {
     firms.forEach(firmName => {
       const plans = data[firmName];
       const planKeys = Object.keys(plans);
-      const types = [...new Set(planKeys.map(k => parsePlanKey(k).type))];
+      // Extract unique plan names (e.g. GOAT Challenge, HERO Challenge, Flex Challenge)
+      const planNames = [...new Set(planKeys.map(k => parsePlanKey(k).name))];
 
       const btn = el('button', 'firm-card');
       btn.setAttribute('aria-pressed', 'false');
@@ -11979,10 +13865,10 @@ footer {
       btn.innerHTML = `
         ${isSample ? '<span class="sample-badge">SAMPLE</span>' : ''}
         <div class="firm-name">${firmName}</div>
-        <div class="firm-types">${types.slice(0,3).join(' · ')}${types.length>3?` +${types.length-3} more`:''}</div>
-        <div class="firm-count">${planKeys.length} plan${planKeys.length!==1?'s':''}</div>`;
+        <div class="firm-types">${planNames.slice(0, 3).join(' · ')}${planNames.length > 3 ? ` +${planNames.length - 3} more` : ''}</div>
+        <div class="firm-count">${planNames.length} plan${planNames.length !== 1 ? 's' : ''} (${planKeys.length} sizes)</div>`;
       btn.addEventListener('click', () => selectFirm(firmName));
-      btn.addEventListener('keydown', e => { if(e.key==='Enter'||e.key===' ') { e.preventDefault(); selectFirm(firmName); }});
+      btn.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectFirm(firmName); } });
       container.appendChild(btn);
     });
   }
@@ -12003,7 +13889,7 @@ footer {
       c.setAttribute('aria-pressed', isThis ? 'true' : 'false');
     });
 
-    // Build plan chips
+    // Build specific plan chips
     buildPlanChips(state.section, name);
     show('step-plan');
 
@@ -12016,45 +13902,51 @@ footer {
   }
 
   // ============================================================
-  // PLAN CHIPS
+  // PLAN CHIPS (Specific Challenge Plans: GOAT, HERO, Flex, etc.)
   // ============================================================
   function buildPlanChips(section, firmName) {
     const plans = getDB()[section]?.[firmName] || {};
-    const types = [...new Set(Object.keys(plans).map(k => parsePlanKey(k).type))];
+    // Group by plan name
+    const planNames = [...new Set(Object.keys(plans).map(k => parsePlanKey(k).name))];
 
     const row = $('plan-chips');
     row.innerHTML = '';
-    types.forEach(type => {
+    planNames.forEach(name => {
+      // Find one plan key to get the type (1-Step, 2-Step)
+      const matchingKey = Object.keys(plans).find(k => parsePlanKey(k).name === name);
+      const type = matchingKey ? parsePlanKey(matchingKey).type : '';
+
       const btn = el('button', 'chip');
-      btn.textContent = type;
+      btn.innerHTML = `<span>${name}</span>${type && !name.includes(type) ? `<small style="opacity:0.75; font-size:0.75rem; margin-left:6px;">(${type})</small>` : ''}`;
+      btn.dataset.planName = name;
       btn.setAttribute('aria-pressed', 'false');
-      btn.addEventListener('click', () => selectPlan(section, firmName, type));
+      btn.addEventListener('click', () => selectPlan(section, firmName, name));
       row.appendChild(btn);
     });
   }
 
-  function selectPlan(section, firmName, type, fromUrl = false) {
-    if (!fromUrl) pushState({ plan: type, size: '', phase: '' });
+  function selectPlan(section, firmName, planName, fromUrl = false) {
+    if (!fromUrl) pushState({ plan: planName, size: '', phase: '' });
 
     document.querySelectorAll('#plan-chips .chip').forEach(c => {
-      const isThis = c.textContent === type;
+      const isThis = c.dataset.planName === planName || c.textContent.trim().startsWith(planName);
       c.classList.toggle('selected', isThis);
       c.setAttribute('aria-pressed', isThis ? 'true' : 'false');
     });
 
-    buildSizeChips(section, firmName, type);
+    buildSizeChips(section, firmName, planName);
     show('step-size');
     if (!fromUrl) { hide('step-rules'); }
     scrollTo('step-size');
   }
 
   // ============================================================
-  // SIZE CHIPS
+  // SIZE CHIPS (Account Sizes for Selected Plan)
   // ============================================================
-  function buildSizeChips(section, firmName, planType) {
+  function buildSizeChips(section, firmName, planName) {
     const plans = getDB()[section]?.[firmName] || {};
-    const matching = Object.entries(plans).filter(([k]) => parsePlanKey(k).type === planType);
-    const sizes = [...new Set(matching.map(([,v]) => v.account_size))].sort((a,b)=>a-b);
+    const matching = Object.entries(plans).filter(([k]) => parsePlanKey(k).name === planName);
+    const sizes = [...new Set(matching.map(([, v]) => v.account_size))].sort((a, b) => a - b);
 
     const row = $('size-chips');
     row.innerHTML = '';
@@ -12062,12 +13954,12 @@ footer {
       const btn = el('button', 'chip');
       btn.textContent = fmt$(sz, 'USD');
       btn.setAttribute('aria-pressed', 'false');
-      btn.addEventListener('click', () => selectSize(section, firmName, planType, sz));
+      btn.addEventListener('click', () => selectSize(section, firmName, planName, sz));
       row.appendChild(btn);
     });
   }
 
-  function selectSize(section, firmName, planType, size, fromUrl = false) {
+  function selectSize(section, firmName, planName, size, fromUrl = false) {
     if (!fromUrl) pushState({ size: String(size), phase: '' });
 
     document.querySelectorAll('#size-chips .chip').forEach(c => {
@@ -12076,7 +13968,7 @@ footer {
       c.setAttribute('aria-pressed', isThis ? 'true' : 'false');
     });
 
-    buildRulesView(section, firmName, planType, size);
+    buildRulesView(section, firmName, planName, size);
     show('step-rules');
     scrollTo('step-rules');
   }
@@ -12084,15 +13976,17 @@ footer {
   // ============================================================
   // RULES VIEW
   // ============================================================
-  function buildRulesView(section, firmName, planType, accountSize) {
+  function buildRulesView(section, firmName, planName, accountSize) {
     const plans = getDB()[section]?.[firmName] || {};
-    const planEntry = Object.entries(plans).find(([k,v]) =>
-      parsePlanKey(k).type === planType && v.account_size === accountSize
+    const planEntry = Object.entries(plans).find(([k, v]) =>
+      parsePlanKey(k).name === planName && v.account_size === accountSize
     );
-    if (!planEntry) { $('rules-content').innerHTML = '<p style="color:var(--muted)">No data found for this combination.</p>'; return; }
+    if (!planEntry) {
+      $('rules-content').innerHTML = '<p style="color:var(--muted)">No data found for this combination.</p>';
+      return;
+    }
 
     const [planKey, plan] = planEntry;
-    const { name: planName } = parsePlanKey(planKey);
     const rules = plan.rules;
     const currency = plan.currency || 'USD';
     const src = rules.source_url;
@@ -12105,7 +13999,7 @@ footer {
 
     // Header
     $('rules-firm-name').textContent = firmName;
-    $('rules-plan-name').textContent = `${planType} — ${fmt$(accountSize, currency)}`;
+    $('rules-plan-name').textContent = `${planName} — ${fmt$(accountSize, currency)}`;
 
     // Affiliate
     const affBox = $('affiliate-box');
@@ -12129,16 +14023,19 @@ footer {
     // Phase tabs
     const tabRow = $('phase-tabs');
     tabRow.innerHTML = '';
-    const TAB_LABELS = { phase_1:'Phase 1', phase_2:'Phase 2', funded:'Funded', evaluation:'Evaluation' };
+    const TAB_LABELS = { phase_1: 'Phase 1', phase_2: 'Phase 2', funded: 'Funded', evaluation: 'Evaluation' };
     phases.forEach(ph => {
       if (phases.length <= 1) return; // hide tabs if only one phase
-      const btn = el('button', `phase-tab${ph===activePhase?' active':''}`, TAB_LABELS[ph]||ph);
+      const btn = el('button', `phase-tab${ph === activePhase ? ' active' : ''}`, TAB_LABELS[ph] || ph);
       btn.setAttribute('role', 'tab');
-      btn.setAttribute('aria-selected', ph===activePhase?'true':'false');
+      btn.setAttribute('aria-selected', ph === activePhase ? 'true' : 'false');
       btn.addEventListener('click', () => {
         pushState({ phase: ph });
         activePhase = ph;
-        tabRow.querySelectorAll('.phase-tab').forEach(t => { t.classList.toggle('active', t.textContent===(TAB_LABELS[ph]||ph)); t.setAttribute('aria-selected', t.classList.contains('active')?'true':'false'); });
+        tabRow.querySelectorAll('.phase-tab').forEach(t => {
+          t.classList.toggle('active', t.textContent === (TAB_LABELS[ph] || ph));
+          t.setAttribute('aria-selected', t.classList.contains('active') ? 'true' : 'false');
+        });
         renderPhase(section, plan, activePhase, currency, accountSize, src, rules);
       });
       tabRow.appendChild(btn);
@@ -12163,15 +14060,15 @@ footer {
   function renderForexPhase(container, ph, rules, currency, accountSize, src) {
     // Meters
     const meters = el('div', 'meters');
-    meters.appendChild(meterCard('Daily Loss Limit','📉', ph.max_daily_loss_pct, ph.max_daily_loss_amount, currency));
-    meters.appendChild(meterCard('Max Drawdown','🔻', ph.max_overall_drawdown_pct, ph.max_overall_drawdown_amount, currency));
-    meters.appendChild(meterCard('Profit Target','🎯', ph.profit_target_pct, ph.profit_target_amount, currency));
+    meters.appendChild(meterCard('Daily Loss Limit', '📉', ph.max_daily_loss_pct, ph.max_daily_loss_amount, currency));
+    meters.appendChild(meterCard('Max Drawdown', '🔻', ph.max_overall_drawdown_pct, ph.max_overall_drawdown_amount, currency));
+    meters.appendChild(meterCard('Profit Target', '🎯', ph.profit_target_pct, ph.profit_target_amount, currency));
     container.appendChild(meters);
 
     // Rule grid
     const grid = el('div', 'rules-grid');
-    const r = (label, val, useBadge=false, span=false) =>
-      grid.appendChild(ruleCard(label, val, src, useBadge, span?' span2':''));
+    const r = (label, val, useBadge = false, span = false) =>
+      grid.appendChild(ruleCard(label, val, src, useBadge, span ? ' span2' : ''));
 
     r('Drawdown Type', ph.drawdown_type);
     r('Trailing Drawdown Lock', rules.drawdown_trailing_stop_lock);
@@ -12200,7 +14097,7 @@ footer {
       container.appendChild(lh);
       const lg = el('div', 'leverage-grid');
       Object.entries(rules.leverage).forEach(([inst, lev]) => {
-        const cell = el('div', 'lev-cell', `<div class="lev-inst">${inst}</div><div class="lev-val">${lev||'NOT FOUND'}</div>`);
+        const cell = el('div', 'lev-cell', `<div class="lev-inst">${inst}</div><div class="lev-val">${lev || 'NOT FOUND'}</div>`);
         lg.appendChild(cell);
       });
       container.appendChild(lg);
@@ -12238,18 +14135,18 @@ footer {
   // ============================================================
   function renderFuturesPhase(container, ph, rules, currency, accountSize, src) {
     const pct = (amt) => accountSize > 0 && typeof amt === 'number'
-      ? +((amt/accountSize)*100).toFixed(2) : 'NOT FOUND';
+      ? +((amt / accountSize) * 100).toFixed(2) : 'NOT FOUND';
 
     // Meters
     const meters = el('div', 'meters');
-    meters.appendChild(meterCard('Daily Loss Limit','📉', pct(ph.daily_loss_limit_amount), ph.daily_loss_limit_amount, currency));
-    meters.appendChild(meterCard('Trailing Drawdown','🔻', pct(ph.trailing_drawdown_amount), ph.trailing_drawdown_amount, currency));
-    meters.appendChild(meterCard('Profit Target','🎯', pct(ph.profit_target_amount), ph.profit_target_amount, currency));
+    meters.appendChild(meterCard('Daily Loss Limit', '📉', pct(ph.daily_loss_limit_amount), ph.daily_loss_limit_amount, currency));
+    meters.appendChild(meterCard('Trailing Drawdown', '🔻', pct(ph.trailing_drawdown_amount), ph.trailing_drawdown_amount, currency));
+    meters.appendChild(meterCard('Profit Target', '🎯', pct(ph.profit_target_amount), ph.profit_target_amount, currency));
     container.appendChild(meters);
 
     const grid = el('div', 'rules-grid');
-    const r = (label, val, useBadge=false, span=false) =>
-      grid.appendChild(ruleCard(label, val, src, useBadge, span?' span2':''));
+    const r = (label, val, useBadge = false, span = false) =>
+      grid.appendChild(ruleCard(label, val, src, useBadge, span ? ' span2' : ''));
 
     r('Drawdown Type', ph.drawdown_type);
     r('Trailing Drawdown Threshold', rules.trailing_threshold);
@@ -12278,7 +14175,7 @@ footer {
       r2('Payout Frequency', ph.payout_frequency);
       r2('First Payout Waiting Time', ph.first_payout_waiting_time);
       r2('Min Winning Days for Payout', ph.min_winning_days_for_payout);
-      r2('Payout Cap Per Withdrawal', typeof ph.payout_cap_per_withdrawal === 'number' ? '$'+ph.payout_cap_per_withdrawal.toLocaleString() : ph.payout_cap_per_withdrawal);
+      r2('Payout Cap Per Withdrawal', typeof ph.payout_cap_per_withdrawal === 'number' ? '$' + ph.payout_cap_per_withdrawal.toLocaleString() : ph.payout_cap_per_withdrawal);
       container.appendChild(grid2);
     }
 
@@ -12291,7 +14188,7 @@ footer {
     grid3.appendChild(ruleCard('Challenge Fee', feeVal, src, false));
     grid3.appendChild(ruleCard('Fee Refundable?', rules.fee_refundable, src, true));
     if (rules.activation_fee !== undefined)
-      grid3.appendChild(ruleCard('Activation Fee', typeof rules.activation_fee==='number'?'$'+rules.activation_fee:rules.activation_fee, src, false));
+      grid3.appendChild(ruleCard('Activation Fee', typeof rules.activation_fee === 'number' ? '$' + rules.activation_fee : rules.activation_fee, src, false));
     grid3.appendChild(ruleCard('Platforms', rules.platforms, src, false, 'span2'));
     grid3.appendChild(ruleCard('Scaling Plan', rules.scaling_plan_details, src, false, 'span2'));
     grid3.appendChild(ruleCard('Prohibited Strategies', rules.prohibited_strategies, src, false, 'span2'));
@@ -12312,8 +14209,8 @@ footer {
   // ============================================================
   // SHOW / HIDE / SCROLL
   // ============================================================
-  function show(id) { const e=$(id); if(e) e.classList.remove('hidden'); }
-  function hide(id) { const e=$(id); if(e) e.classList.add('hidden'); }
+  function show(id) { const e = $(id); if (e) e.classList.remove('hidden'); }
+  function hide(id) { const e = $(id); if (e) e.classList.add('hidden'); }
   function scrollTo(id) {
     const e = $(id);
     if (e) setTimeout(() => e.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80);
@@ -12330,7 +14227,7 @@ footer {
     const cards = document.querySelectorAll('.firm-card');
     cards.forEach(c => {
       if (c.querySelector('.firm-name')?.textContent === firm) {
-        c.classList.add('selected'); c.setAttribute('aria-pressed','true');
+        c.classList.add('selected'); c.setAttribute('aria-pressed', 'true');
       }
     });
 
@@ -12341,14 +14238,16 @@ footer {
     buildSizeChips(section, firm, plan);
     // Highlight plan chip
     document.querySelectorAll('#plan-chips .chip').forEach(c => {
-      if (c.textContent === plan) { c.classList.add('selected'); c.setAttribute('aria-pressed','true'); }
+      if (c.dataset.planName === plan || c.textContent.trim().startsWith(plan)) {
+        c.classList.add('selected'); c.setAttribute('aria-pressed', 'true');
+      }
     });
     show('step-size');
 
     if (!size) return;
     const sz = parseInt(size);
     document.querySelectorAll('#size-chips .chip').forEach(c => {
-      if (c.textContent === fmt$(sz)) { c.classList.add('selected'); c.setAttribute('aria-pressed','true'); }
+      if (c.textContent === fmt$(sz)) { c.classList.add('selected'); c.setAttribute('aria-pressed', 'true'); }
     });
     buildRulesView(section, firm, plan, sz);
     show('step-rules');
